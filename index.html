@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Reguistrarse</title>
+
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="imagen/x-icon" href="img/Icono_Barra_Direcciones.png">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <nav class="navegadorBarra">
+        <div class="fila row">
+            <div class="col">
+                <img class="imgIconoBarra" style="height: 70px;" src="img/Icono_Barra_Direcciones.png">
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                <div>
+                    <div class="tituloTeEstasReguistrando">Formulario de registro</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--fondoImg-->
+    <div class="formaRegistro">
+        <form action="html/reguistrarse.html">
+
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <input class="input_formulario" name="nombre" id="nombre" type="text" required>
+                        <label class="letrasReguistro_label">Nombre - Usuario</label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <input class="input_formulario" name="apellido" id="apellido" type="text" minlength="4"
+                            maxlength="20" required>
+                        <label class="letrasReguistro_label">Apellido</label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <input class="input_formulario" name="edad" id="edad" type="text" minlength="1" maxlength="10"
+                            required>
+                        <label class="letrasReguistro_label">Edad</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    <div>
+                        <input class="input_formulario" style="width: 386px;" name="coreo" id="coreo" type="text" minlength="4" maxlength="30"
+                            required>
+                        <label class="letrasReguistro_label">Correo electrónico</label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <input class="input_formulario" name="passwordRegistro" id="passwordRegistro" type="text"
+                            minlength="4" maxlength="10" required>
+                        <label class="letrasReguistro_label">Contraseña</label>
+                    </div>
+                </div>
+
+                <div class="col"></div>
+
+            </div>
+
+            <div class="contenedorFilas">
+                <div class="contenedor_subtitulos_formulario">
+                    <h4 class="subtitulos_formulario">Fecha de nacimiento</h4>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    <input class="input_formulario" name="diaNacimiento" id="diaNacimiento" type="text" required>
+                    <label class="letrasReguistro_label">dia</label>
+                </div>
+
+                <div class="col">
+                    <input class="input_formulario" name="mesNacimiento" id="mesNacimiento" type="text text" required>
+                    <label class="letrasReguistro_label">mes</label>
+                </div>
+
+                <div class="col">
+                    <input class="input_formulario" name="yearNacimiento" id="yearNacimiento" type="text" required>
+                    <label class="letrasReguistro_label">año</label>
+                </div>
+
+            </div>
+
+            <!--type="reset" hace que vehas por mas tiempo datos en consola y no pases a mas index-->
+        
+            <button
+                onclick="datosLocalStorage(nombre.value,passwordRegistro.value,coreo.value,apellido.value,edad.value);"
+                class="btnLetras">
+                Registrarse
+            </button>
+
+        </form>
+        <form action="html/reguistrarse.html">
+            <button class="btnLetras">Volver</button>
+        </form>
+
+    </div>
+
+
+
+    <script src="js/registrarse.js"></script>
+
+
+    <!--comienza la barra de contactos y demas-->
+    <div class="rectanguloContactos row text-left">
+        <div class="col col-md-6 col-lg">
+            <a class="btnContactos" href="#">Contactos</a>
+        </div>
+        <div class="col col-md-6 col-lg">
+            <a class="btnContactos" href="#">Dirección</a>
+        </div>
+        <div class="col col-md-6 col-lg">
+            <a class="btnContactos" href="#">Información</a>
+        </div>
+        <div class="col col-md-6 col-lg">
+            <a class="btnContactos" href="#">Referencias_legales</a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="img/iconos-redes-facebook.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="img/iconos-redes-youtube.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="img/iconos-redes-twiter.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="img/iconos-redes-instagram.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="img/iconos-redes-whattsap.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="img/iconos-redes-pinteresk.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="img/iconos-redes-google.jpg"></a>
+        </div>
+    </div>
+    <!--termina la barra de contactos y demas-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

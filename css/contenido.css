@@ -1,0 +1,334 @@
+/*personalizacion del fond de la paguina*/
+body{
+    background-image: url("../img/fondo_dela\ \ pagina.jpg");
+    background-attachment: fixed;
+}
+
+/*barra de dirrecciones en la parte de arriba*/
+.containerBarraArriba{
+    background-image: url("../img/fondo_Barra_Direcciones.jpg");
+    border-top: 0px;
+    line-height: 63px;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*icono de la barra*/
+.imgIconoBarra{
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+/*direcciones de las barras su personalizacion en si :o*/
+.nombresDireccionesBarra{
+    background-color: rgb(0, 0, 0, 0.0);
+    border: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 0px;
+    outline: none;
+}
+.nombresDireccionesBarra:hover{
+    background-color: rgba(0, 0, 0, 0.0);
+    line-height: 0px;
+    outline: none;
+}
+.nombresDireccionesBarra:focus{
+    background-color: rgba(0, 0, 0, 0.0);
+    outline: none;
+}
+/*fondo de las columnas*/
+.colFondo{
+    background-color: rgb(33, 33, 56);
+    border: 1px solid rgba(33, 33, 150, 0.2);
+}
+/*columnas vacias del nav*/
+.colVacio{
+    border-bottom: 0px;
+}
+/*boton barra*/
+.btnBarra{
+    width: 50px;
+    height: 100px;
+}
+/*titulo de todo el contenido despues de la barra de nav*/
+.todo_Contenido{
+    background-color: rgba(33, 33, 56, 0.5);
+}
+/*personalizacion del titulo pricipal*/
+.tituloDentro {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255, 0.9);
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    background: rgba(0, 0, 0, 0.0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin: auto;
+}
+/*rectangulo contenedor del nombre de la pagina*/
+
+/*direcion quito*/
+.nombreDirrecion{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 150px;
+    padding-left: 6px;
+    margin-left: 185px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*titulo normas sanitarias*/
+.normasSanitarias{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 19px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 340px;
+   margin: auto;
+   margin-top: 50px;
+}
+/*descripcion de las normas*/
+.descripcionNormasSanitarias{
+    background-color: rgba(255, 255, 255, 0.959);
+}
+/*rectangulo de las normas sanitarias*/
+.rectanguloNormasSanitarias {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: rgb(255, 255, 255, 0.8);
+    border: 2px solid rgb(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+.rectanguloNormasSanitarias:hover{
+    border:2px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+
+
+/*
+'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*/
+
+
+
+
+
+
+/*rectangulo de los nombre de los platos*/
+.tituloPlatos {
+    border: 0px solid rgb(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.0);
+    font-size: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.tituloPlatos:hover{
+    border: none;
+    outline: none;
+}
+.tituloPlatos:focus{
+    border: none;
+    outline: none;
+}
+/*titulo "Menu"*/
+.tituloMenu{
+    background-color: rgba(242, 246, 247, 0.658);
+    border-radius: 19px;
+    border: 2px solid rgba(33, 33, 150, 0.3);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*rectangulo de los precios __es un input pilas !__*/
+.rectanguloPrecio{
+    background: rgb(240, 10, 10);
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: bold;
+    width: 100%;
+    outline: none;
+}
+/*cuadrado que contiene a todos los platos, el de borde blanco*/
+.desayunoRectangulo{
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: rgba(33, 33, 56, 0.45);
+    margin-left: 6%;
+    margin-right: 6%;
+    
+}
+/*rectangulo contenedor para cada plato*/
+.rectanguloContenedorPlatos{
+    background-color: rgba(33, 33, 56);
+    border-radius: 50px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.rectanguloContenedorPlatos:hover{
+    background-color: rgba(33, 33, 56);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255, 0.6);
+}
+/*rectangulo del link resersvar*/
+.reservarCuadrado{
+	background-color: rgba(255, 255, 255, 0.5);
+    border:none;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.reservarCuadrado:hover{
+	background-color: rgb(197, 197, 197);
+	box-shadow: 0 0 9px 1px rgb(197, 197, 197, 0.5);
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    transition: all 0.4s;
+}
+/*posicion de los link de reservar y precio*/
+.cuadradoPrecio{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.rectanguloLink{
+    font-size: 25px;
+    text-align: center;
+}
+/*cuadrado para los tipos de comidas*/
+.rectanguloServiciosPlatos{
+        height: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        border-left: 0px solid rgba(255, 255, 255, 0.5);
+        border-right: 0px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0px solid rgba(255, 255, 255, 0.5);
+
+        padding-top: 20px;
+
+        background: rgba(0, 0, 0, 0.0);
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 50px;
+    }
+/*rectangulo para la descripcion de cada plato*/
+.rectanguloDescripcionPlato{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*posicion de la imagen*/
+.imgPosicion{
+    text-align: center;
+    margin-bottom: 12px;
+}
+/*posicion del menu de todos los platos y demas*/
+.posicionMenuPlatosDemas{
+    padding-left: 60px;
+    text-align: center;
+}
+/*personalizacion de las letras del menu y demas platos*/
+.letrasMenuPlatosDemas{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    background: rgb(33, 33, 70);
+    border-radius: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 3px;
+}
+.letrasMenuPlatosDemas:hover{
+    border: 1px solid rgb(255, 255, 255, 0.5);
+	background-color: rgb(255, 255, 255, 0.3);
+	box-shadow: 0 0 9px 1px rgb(255, 255, 255, 0.5);
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.4s;
+}
+.letrasMenuPlatosDemas:focus{
+    outline: none;
+}
+.btnAnclaInternaPlatos{
+    text-align: center;
+    
+}
+/*contenedor del menu*/
+.posicionMenu{
+    text-align: center;
+}
+
+
+/*posicion del cuadro de menu principal*/
+.titulosServicios{
+    border:1px solid rgb(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin: auto;
+}
+.imgSize{
+    max-height: 34vh;
+}
+.filaPlatos{
+    padding-left: 6%;
+    padding-right: 6%;
+}
+/*rectangulo del menu de los platos*/
+.rectanguloMenu{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(33, 33, 56);
+    font-size: 5px;
+    border-radius: 30px;
+    margin: auto;
+    padding-bottom: 10px;
+   
+}
+/*la barra de contactos y demas funciones*/
+.rectanguloContactos{
+    background-color: #000020;
+    margin: auto;
+}
+/*botones de la barra de contactos  de la parte inferior*/
+.btnContactos{
+    color: rgb(255, 255, 255);
+    line-height: 63px;
+}
+/*iamgenes-iconos del fueter*/
+.img_footer{
+    margin-top: 20px;
+    height: 25px;
+    border-radius: 9px;
+}

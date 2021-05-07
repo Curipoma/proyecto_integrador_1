@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>CONFIRMACIÓN DE RESERVA</title>
+	<link rel="stylesheet" type="text/css" href="../css/reservar.css">
+	<link rel="shortcut icon"type="imagen/x-icon" href="../img/Icono_Barra_Direcciones.png">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	</head>
+	<boddy>
+
+		<nav>
+			<div class="containerBarraArriba row text-left">
+				<div class="colVacio col-12 col-md-6 col-lg">  
+					  <img class="imgIconoBarra" style="height: 70px;" src="../img/Icono_Barra_Direcciones.png">
+				</div> 
+				<div class="colVacio col">
+				  <P></P>
+				</div>
+				<div class="colVacio col">
+				  <P></P>
+				</div>
+				<div class="colFondo col-12 col-md-6 col-lg" style="border-left:1px solid white;">
+					  <form action="../html/contenido.html #menuDeComida">
+						  <button class="nombresDireccionesBarra">Volver al menú</button>
+					  </form>               
+				</div>
+				<div class="colFondo col-12 col-md-6 col-lg">
+					<form action="../html/reservarLugares.html #Platos ecuatorianos">
+					  <button class="nombresDireccionesBarra">Ver lugares</button>
+				  </form>                                        
+				</div>
+				<div class="colFondo col-12 col-md-6 col-lg">                      
+					<form action="../html/perfil.html">
+					  <button class="nombresDireccionesBarra">Perfil</button>
+				  </form>                   
+				</div>
+				<div class="colFondo col-12 col-md-6 col-lg">
+					<form action="../index.html">
+						<button  onclick="eliminarDatos();" class="nombresDireccionesBarra">Cerrar sesión</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!--termina la barra de dirreciones y demas funcoines-->
+	
+		<!--creando una linea de separacion nada mas en modo estetico-->
+
+		<hr style="background-color: black;">
+		
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-12 col-md-6 col-lg">
+					<h1 class="tituloMayor">GRACIAS POR ELEGIRNOS</h1>
+				</div>
+			</div>
+		</div>
+		
+		<!--creando una linea de separacion nada mas en modo estetico-->
+		<hr style="background-color: black;">
+	
+		<div class="fondoImg" style="border-top:1px solid rgb(0, 0, 0);">
+			<div class="centro">
+				<div>
+					<div class="tituloPrincipal">TU RESERVACION HA SIDO EXITOSA</div>
+					<hr style="background-color: black;">
+				</div>
+
+				<div class="rectanguloDescripcion">
+					<div>
+						<p class="textoDescripcion">HAS RESERVADO UNA MESA EN NUESTRO RESTAURANT </p>
+						<p class="textoDescripcion">GRACIAS POR PREFERIRNOS</p>
+						<P class="textoDescripcion"> SI DESEAS CANCELAR TU RESERVACION MAS OPCIONES AQUI ABAJO</P>
+					</div>
+				</div>
+
+				<hr style="background-color: black;">
+
+				<div class="cajaInformacion">
+					<input class="nombre_restaurante" type="text" name="mostrarRestaurante" id="mostrarRestaurante" readonly ><br>
+					<input id="plato" readonly class="informacionReserva">
+					<input id="mensaje" readonly class="informacionReserva">
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="alinearPaticionesAnularMenu col">
+							<form action="../html/cancelacionReserva.html">
+								<button onclick="eliminarLocal();" class="btsLinks">
+									Anular
+								</button>
+							</form>
+							
+						  </div>
+						  <div class="alinearPaticionesAnularMenu col">
+							<form action="../html/reservarLugares.html">
+								<button class="btsLinks">
+									Ir a lugares
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+
+		
+
+		
+		
+		<script src="../js/reservar.js"></script>
+
+		
+
+
+		
+
+
+
+
+
+		<!--comienza la barra de contactos y demas-->
+		<div style="margin-top: 25px;">
+			<div class="rectanguloContactos row text-left">
+			  <div class="col col-md-6 col-lg">
+				<a class="btnContactos" href="#">Contactos</a>
+			  </div>
+			  <div class="col col-md-6 col-lg">
+				<a class="btnContactos" href="#">Direccion</a>
+			  </div>
+			  <div class="col col-md-6 col-lg">
+				<a class="btnContactos" href="#">Informacion de la pag</a>
+			  </div>
+			  <div class="col col-md-6 col-lg">
+				<a class="btnContactos" href="#">Referencias legales</a>
+			  </div>
+			</div>
+		  </div>
+		  <!--termina la barra de contactos y demas-->
+
+		  <script src="../js/reservar.js"></script>
+		
+
+
+		
+		
+		
+	
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

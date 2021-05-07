@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="../css/perfil.css" rel="stylesheet">
+  <link rel="shortcut icon" type="imagen/x-icon" href="../img/Icono_Barra_Direcciones.png">
+
+  <title>PERFIL</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="containerBarraArriba row text-center">
+      <div class="colVacio col-12 col-md-6 col-lg">
+        <img class="imgIconoBarra" style="height: 70px;" src="../img/Icono_Barra_Direcciones.png">
+      </div>
+      <div class="colVacio col">
+        <P></P>
+      </div>
+      <div class="colVacio col">
+        <P></P>
+      </div>
+      <div class="colVacio col">
+        <p></p>
+      </div>
+      <div class="colVacio col">
+        <p></p>
+      </div>
+      <div class="colFondo">
+        <form action="../html/reservarLugares.html #Platos ecuatorianos">
+          <button class="nombresDireccionesBarra">Ver lugares</button>
+        </form>
+      </div>
+      <div class="colFondo">
+        <form action="../index.html">
+          <button onclick="eliminarDatos();" class="nombresDireccionesBarra">Cerrar sesión</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--termina la barra de dirreciones y demas funcoines-->
+
+  <div class="rectanguloContenedor">
+    <div class="tituloTuPrefil">TU PERFIL</div>
+    <!--cominenza contenedor porncipal datos perfil -->
+    <div class="">
+      <div class="row text-left">
+        <div class="contenedorTodosDatos">
+          <div class="row">
+            <div class="col">
+              <img class="imgUsuario" src="../img/icon_de_usuario.jpg">
+            </div>
+            <div class="Col_Datos col">
+              <label class="propiedadUsuario">Nombre: </label><br>
+              <input class="datoLogin" name="nombre" id="nombre" readonly><br>
+
+              <label class="propiedadUsuario">Contraseña: </label><br>
+              <input class="datoLogin" name="password" id="password" readonly><br>
+
+            </div>
+            <div class="Col_Datos col">
+
+              <label class="propiedadUsuario">Correo electrónico: </label><br>
+              <input class="datoLogin" name="correo" id="correo" readonly><br>
+
+              <label class="propiedadUsuario">Apellido: </label><br>
+              <input class="datoLogin" name="apellido" id="apellido" readonly><br>
+
+
+            </div>
+            <div class="Col_Datos col">
+              <label class="propiedadUsuario">Edad: </label><br>
+              <input class="datoLogin" name="edad" id="edad" readonly><br>
+
+              <label class="propiedadUsuario">Fecha de nacimiento: </label><br>
+              <input class="datoLogin" name="fechaNacimiento" id="fechaNacimiento" readonly><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--termina contenedor porncipal datos perfil -->
+  
+  <!--comienza muestra de reserva uno-->
+  <div class="todasReservas"><br><br><br>
+    <h1 class="titulo_tusReservas">Tus reservas programadas</h1>
+
+
+    <div id="sugerenciaReservar">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <p style="text-align: center; color: white;">Aun no tienes reservas que tal si empiezas a...</p>
+          <form action="../html/datosReserva.html">
+            <button class="btn_sugerenciaReserva" type="text" name="sugerencia_Reservar" id="sugerencia_Reservar">
+              Reservar
+            </button>
+          </form>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+
+    <div style="margin: auto; margin-bottom: 100px;" class=" rectanguloDatosReserva">
+      <div id="Reserva_Muestra1">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div style="text-align: center;">
+                <input class="mensajePrecio" id="mensajePrecio_1" readonly>
+              </div>
+              <input class="impresion_reserva_platosLugar" id="platoElegido1" type="text" readonly>
+              <input class="impresion_reserva_platosLugar" id="restauranteEleguido1" type="text" readonly>
+              <small class="nombreDatoReserva">Fecha</small>
+              <input class="impresion_reserva" id="fechaElegido1" name="fechaElegido1" type="text" readonly><br>
+              <small class="nombreDatoReserva">Mes</small>
+              <input class="impresion_reserva" id="mesElegido1" name="mesElegido1" type="text" readonly><br>
+              <small class="nombreDatoReserva">Año</small>
+              <input class="impresion_reserva" id="yearElegido1" name="yearElegido1" type="text" readonly><br>
+              <small class="nombreDatoReserva">Hora</small>
+              <input class="impresion_reserva" id="horaElegido1" name="horaElegido1" type="text" readonly><br>
+              <small class="nombreDatoReserva">Adultos</small>
+              <input class="impresion_reserva" id="adultosElegido1" name="adultosElegido1" type="text" readonly><br>
+              <smal class="nombreDatoReserva">Niños</small>
+                <input class="impresion_reserva" id="boyElegido1" name="boyElegido1" type="text" readonly><br>
+            </div>
+          </div>
+          <form action="../html/perfil.html">
+            <div class="col" style="text-align: center;">
+              <button class="btn_Anular" onclick="anularReserva1();">Anular</button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--termina muestra de reserva uno-->
+
+
+
+  <!--comienza muestra de reserva dos-->
+  <div style="margin: auto; margin-bottom: 100px;" class=" rectanguloDatosReserva">
+    <div id="Reserva_Muestra2">
+      <div class="contenedor_Muestra_Reservas_Perfil container">
+        <div class="row">
+          <div class="col">
+            <div style="text-align: center;">
+              <input class="mensajePrecio" id="mensajePrecio_2" readonly>
+            </div>
+            <input class="impresion_reserva_platosLugar" id="platoElegido2" type="text" readonly>
+            <input class="impresion_reserva_platosLugar" id="restauranteEleguido2" type="text" readonly>
+            <small class="nombreDatoReserva">Fecha</small>
+            <input class="impresion_reserva" id="fechaElegido2" name="fechaElegido2" type="text" readonly><br>
+            <small class="nombreDatoReserva">Mes</small>
+            <input class="impresion_reserva" id="mesElegido2" name="mesElegido2" type="text" readonly><br>
+            <small class="nombreDatoReserva">Año</small>
+            <input class="impresion_reserva" id="yearElegido2" name="yearElegido2" type="text" readonly><br>
+            <small class="nombreDatoReserva">Hora</small>
+            <input class="impresion_reserva" id="horaElegido2" name="horaElegido2" type="text" readonly><br>
+            <small class="nombreDatoReserva">Adultos</small>
+            <input class="impresion_reserva" id="adultosElegido2" name="adultosElegido2" type="text" readonly><br>
+            <smal class="nombreDatoReserva">Niños</small>
+              <input class="impresion_reserva" id="boyElegido2" name="boyElegido2" type="text" readonly><br>
+          </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <form action="../html/perfil.html">
+            <button class="btn_Anular" onclick="anularReserva2();">Anular</button>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--termina muestra de reserva dos-->
+
+  <!--comienza muestra de reserva tres-->
+  <div style="margin: auto; margin-bottom: 100px;" class=" rectanguloDatosReserva">
+    <div id="Reserva_Muestra3">
+      <div class="contenedor_Muestra_Reservas_Perfil container">
+        <div class="row">
+          <div class="col">
+            <div style="text-align: center;">
+              <input class="mensajePrecio" id="mensajePrecio_3" readonly>
+            </div>
+            <input class="impresion_reserva_platosLugar" id="platoElegido3" type="text" readonly>
+            <input class="impresion_reserva_platosLugar" id="restauranteEleguido3" type="text" readonly>
+            <small class="nombreDatoReserva">Fecha</small>
+            <input class="impresion_reserva" id="fechaElegido3" name="fechaElegido3" type="text" readonly><br>
+            <small class="nombreDatoReserva">Mes</small>
+            <input class="impresion_reserva" id="mesElegido3" name="mesElegido3" type="text" readonly><br>
+            <small class="nombreDatoReserva">Año</small>
+            <input class="impresion_reserva" id="yearElegido3" name="yearElegido3" type="text" readonly><br>
+            <small class="nombreDatoReserva">Hora</small>
+            <input class="impresion_reserva" id="horaElegido3" name="horaElegido3" type="text" readonly><br>
+            <small class="nombreDatoReserva">Adultos</small>
+            <input class="impresion_reserva" id="adultosElegido3" name="adultosElegido3" type="text" readonly><br>
+            <smal class="nombreDatoReserva">Niños</small>
+              <input class="impresion_reserva" id="boyElegido3" name="boyElegido3" type="text" readonly><br>
+          </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <form action="../html/perfil.html">
+            <button class="btn_Anular" onclick="anularReserva3();">Anular</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--termina muestra de reserva tres-->
+
+  <!--comienza muestra de reserva cuatro-->
+  <div style="margin: auto; margin-bottom: 100px;" class=" rectanguloDatosReserva">
+
+    <div id="Reserva_Muestra4">
+      <div class="contenedor_Muestra_Reservas_Perfil container">
+        <div class="row">
+          <div class="col">
+            <div style="text-align: center;">
+              <input class="mensajePrecio" id="mensajePrecio_4" readonly>
+            </div>
+            <input class="impresion_reserva_platosLugar" id="platoElegido4" type="text" readonly>
+            <input class="impresion_reserva_platosLugar" id="restauranteEleguido4" type="text" readonly>
+            <small class="nombreDatoReserva">Fecha</small>
+            <input class="impresion_reserva" id="fechaElegido4" name="fechaElegido4" type="text" readonly><br>
+            <small class="nombreDatoReserva">Mes</small>
+            <input class="impresion_reserva" id="mesElegido4" name="mesElegido4" type="text" readonly><br>
+            <small class="nombreDatoReserva">Año</small>
+            <input class="impresion_reserva" id="yearElegido4" name="yearElegido4" type="text" readonly><br>
+            <small class="nombreDatoReserva">Hora</small>
+            <input class="impresion_reserva" id="horaElegido4" name="horaElegido4" type="text" readonly><br>
+            <small class="nombreDatoReserva">Adultos</small>
+            <input class="impresion_reserva" id="adultosElegido4" name="adultosElegido4" type="text" readonly><br>
+            <smal class="nombreDatoReserva">Niños</small>
+              <input class="impresion_reserva" id="boyElegido4" name="boyElegido4" type="text" readonly><br>
+          </div>
+        </div>
+        <div class="col" style="text-align: center;">
+          <form action="../html/perfil.html">
+            <button class="btn_Anular" onclick="anularReserva4();">Anular</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mostrarNuevaReserva">
+    <div class="row">
+      <div class="col">
+        <div style="text-align: center;">
+          <form action="../html/datosReserva.html">
+            <button class="btn_Editar">Añadir nueva reserva</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--termina muestra de reserva cuatro-->
+  </div>
+
+  <!--comienza la barra de contactos y demas-->
+  <div class="">
+    <div class="rectanguloContactos row text-left">
+      <div class="col col-md-6 col-lg">
+        <a class="btnContactos" href="#">Contactos</a>
+      </div>
+      <div class="col col-md-6 col-lg">
+        <a class="btnContactos" href="#">Dirección</a>
+      </div>
+      <div class="col col-md-6 col-lg">
+        <a class="btnContactos" href="#">Información</a>
+      </div>
+      <div class="col col-md-6 col-lg">
+        <a class="btnContactos" href="#">Referencias_legales</a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-facebook.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-youtube.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-twiter.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-instagram.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-whattsap.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-pinteresk.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-google.jpg"></a>
+      </div>
+    </div>
+  </div>
+  <!--termina la barra de contactos y demas-->
+  <script src="../js/perfil.js"></script>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>RESTAURANTES</title>
+
+    <link rel="shortcut icon"type="imagen/x-icon" href="../img/Icono_Barra_Direcciones.png">
+    <link rel="stylesheet"  href="../css/lugaresReservar.css">
+  </head>
+  <body>
+
+   
+      <nav>
+        <div class="containerBarraArriba row text-center">
+          
+            <div class="colVacio col-12 col-md-6 col-lg">
+                  <img class="imgIconoBarra" style="height: 70px;" src="../img/Icono_Barra_Direcciones.png">
+            </div> 
+            <div class="colVacio col">
+              <P></P> 
+            </div>
+            <div class="colVacio col">
+              <P></P>
+            </div>
+            <div class="colVacio col">
+              <P></P> 
+            </div>
+            <div class="colVacio col">
+              <P></P> 
+            </div>
+            <div class="colFondo col-12 col-md-6 col-lg">                      
+                <form action="../html/perfil.html">
+                  <button class="nombresDireccionesBarra">Perfil</button>
+              </form>                   
+            </div>
+            <div class="colFondo col-12 col-md-6 col-lg">
+              <form action="../index.html">
+                <button onclick="eliminarDatos();"  class="nombresDireccionesBarra">Cerrar sesión</button>
+              </form>
+            </div>
+        </div>
+    </nav>
+      <!--termina la barra de dirreciones y demas funcoines-->
+ 
+    <!--AQUI EMPIEZA EL MAIN-->
+    <main>
+      <!--AQUI EMPIEZA EL CAROUSEL-->
+      <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false" >
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/pic1.jpg" class="imgCarusel d-block w-100" alt="imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/pic2.jpg" class="imgCarusel d-block w-100" alt="imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/pic3.jpeg" class="imgCarusel d-block w-100" alt="imagen 3">
+          </div>
+        </div>
+
+           <div class="sitiosRestaurantes">
+            <div class="container text-center text-md-right">
+              <div class="row mt-5">
+                <div class="col-12 col-md-6 offset-md-6">
+                  <h1><i class="">ENCUENTRA TU RESTAURANT FAVORITO<i></h1>
+                  <p class="d-none d-md-block">Aqui encontraras informacion sobre tus restaurantes favorivos en la ciudad de Quito sin necesidad de salir de tu casa y reservar donde tu prefieras</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      <!--AQUI TERMINA EL CAROUSEL-->
+      <!--AQUI EMPIEZAN LAS CARTAS-->
+      
+      <div>
+        <section class=" contenido">
+          <div class="container">
+            <div class="row">
+              <div class="col mb-4 mt-4 text-center text-oppercase">
+                <h2 class="titulos">RESERVA EN LOS MEJORES RESTAURANTES DE QUITO</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="cartaContenedor " style="width: 18rem;">
+                  <img class="imgCards" src="../img/arcadia.jpg" width="300" height="200"class="" alt="...">
+                  <div class="card-body">
+                    <input class="input_muestra_reservado" id="AlertaOcupado1" name="AlertaOcupado1" readonly>
+                      <input class="input_muestra_horario" id="ocupado1" name="ocupado1" readonly>
+                      <input class="nombre_restaurante" id="primerRestaurante" value="L'Arcadia Pasta Gourmet" readonly type="text">
+                      <p class="card-text">Av. Coruna N30-135 y Whimper Quito Sector Iglesia De La Paz, Quito 170150 Ecuador.<br><br> 
+                        Telefono: 290 8549</p>
+                      <form action="../html/contenido.html">
+                        <button onclick="nombreRestaurante(primerRestaurante.value);" class="btnReservar_Lugar">Reservar aquí</button>
+                      </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="cartaContenedor" style="width: 18rem;">
+                  <img  class="imgCards" src="../img/sanblas.jpg"width="300" height="200" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <input  class="input_muestra_reservado" id="AlertaOcupado2" name="AlertaOcupado2" readonly>
+                    <input class="input_muestra_horario" id="ocupado2" name="ocupado2" readonly>
+                    <input class="nombre_restaurante" id="segundoRestaurante" value="Café San Blas" readonly type="text">
+                    <p class="card-text">Jose Antepara y Vicente Leon, Quito 170150 Ecuador.<br><br> 
+                      Telefono: +593 2-228-6762</p>
+                      <form action="../html/contenido.html">
+                        <button onclick="nombreRestaurante(segundoRestaurante.value);" class="btnReservar_Lugar">Reservar aquí</button>
+                      </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div  class="cartaContenedor" style="width: 18rem;">
+                  <img  class="imgCards" src="../img/corvi.jpg" width="300" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <input class="input_muestra_reservado" id="AlertaOcupado3" name="AlertaOcupado3" readonly>
+                      <input class="input_muestra_horario" id="ocupado3" name="ocupado3" readonly>
+                    <input class="nombre_restaurante" id="tercerRestaurante" value="Corvinas !Don Jimmy!" readonly type="text">
+                    <p class="card-text">Esmeraldas, Pichincha Avenida Pichincha, Quito 170150 Ecuador.<br><br>Telefono: +593 98 722 4027</p>
+                    <form action="../html/contenido.html">
+                      <button onclick="nombreRestaurante(tercerRestaurante.value);" class="btnReservar_Lugar">Reservar aquí</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="cartaContenedor" style="width: 18rem;">
+                  <img class="imgCards" src="../img/casa.jpg" width="300" height="200" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <input class="input_muestra_reservado" id="AlertaOcupado4" name="AlertaOcupado4" readonly>
+                    <input class="input_muestra_horario" id="ocupado4" name="ocupado4" readonly>
+                    <input class="nombre_restaurante" id="cuartoRestaurante" value="Restaurante Casa Gangotena" readonly type="text">
+                    <p class="card-text">Bolivar Oe6-41 y Cuenca Cuenca, Quito 170150 Ecuador.<br><br>
+                      Telefono: +593 97 999 9995</p>
+                      <form action="../html/contenido.html">
+                        <button onclick="nombreRestaurante(cuartoRestaurante.value);" class="btnReservar_Lugar">Reservar aquí</button>
+                      </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="cartaContenedor" style="width: 18rem;">
+                  <img class="imgCards" src="../img/bocatto.jpg" width="300" height="200" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <input class="input_muestra_reservado" id="AlertaOcupado5" name="AlertaOcupado5" readonly>
+                    <input class="input_muestra_horario" id="ocupado5" name="ocupado5" readonly>
+                    <input class="nombre_restaurante" id="quintoRestaurante" value="Bocatto Da Fiorentino" readonly type="text">
+                    <p class="card-text">Mall El Jardin D2: Scala Shopping D3: La Floresta D1 D1, Mall El Jardin D2, Scala Shopping, Quito 170150 Ecuador.<br><br>
+                      Telefono: +593 2-298-0264</p>
+                      <form action="../html/contenido.html">
+                        <button onclick="nombreRestaurante(quintoRestaurante.value);" class="btnReservar_Lugar">Reservar aquí</button>
+                      </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="cartaContenedor" style="width: 18rem;">
+                  <img class="imgCards" src="../img/somos.jpg" width="300" height="200" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <input class="input_muestra_reservado" id="AlertaOcupado6" name="AlertaOcupado6" readonly>
+                    <input class="input_muestra_horario" id="ocupado6" name="ocupado6" readonly>
+                    <input class="nombre_restaurante" id="sextoRestaurante" value="SOMOS Restaurante Ecuador" readonly type="text">
+                    <p class="card-text">N34-421 Av. Eloy Alfaro y Av. Portugal, Quito 170504 Ecuador.<br><br>Telefono:  +593 98 853 1645</p>
+                    <form action="../html/contenido.html">
+                      <button onclick="nombreRestaurante(sextoRestaurante.value);" class="btnReservar_Lugar">Reservar aquí</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+      <!--AQUI TERMINAN LAS CARTAS-->
+    </main>
+
+
+
+    <script src="../js/lugaresReserva.js"></script>
+
+
+
+
+    <!--AQUI TERMINA EL MAIN-->
+    <!--AQUI COMIENZA EL FOOTER-->
+    <div class="barraContactos pb-3 pt-3">
+      <div class="container">
+        <div class="row text-left">
+          <div class="col-12 col-md-6 col-lg">
+            <a class="letrasContacto" href="#">Contactos</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg">
+            <a class="letrasContacto" href="#">Dirección</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg">
+            <a class="letrasContacto" href="#">Información</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg">
+            <a class="letrasContacto" href="#">Referencias_legales</a>
+          </div>
+          <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="../img/iconos-redes-facebook.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="../img/iconos-redes-youtube.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="../img/iconos-redes-twiter.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="../img/iconos-redes-instagram.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="../img/iconos-redes-whattsap.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="../img/iconos-redes-pinteresk.jpg"></a>
+        </div>
+        <div class="col col-md-6 col-lg" style="text-align: right;">
+            <a href="#"><img class="img_footer" src="../img/iconos-redes-google.jpg"></a>
+        </div>
+        </div>
+      </div> 
+    </dvi>
+    <!--AQUI TERMINA EL FOOTER-->
+    <script src="../js/lugaresReserva.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

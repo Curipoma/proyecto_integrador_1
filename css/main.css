@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(33, 33, 56, 0.2);
+}
+/*titulo principal te estas registrando*/
+.tituloTeEstasReguistrando{
+    font-weight: bold;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+    border: 0px;
+    border-radius: 19px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+/*clase navegadorBarra*/
+.navegadorBarra{
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+/*fondo y hubiacion de la fila de nav*/
+.fila{
+    background-image: url("../img/fondo_Barra_Direcciones.jpg");
+}
+/*icono de la barra*/
+.imgIconoBarra{
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+/*style="background-image: url(/img/fondo_dela\ \ pagina.jpg);"*/
+.fondoImg{
+    background-image: url("../img/fondo_dela  pagina.jpg");
+    height: 470px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/*rectangulo contenedor de los datos de reguistro*/
+.formaRegistro{
+    background-color: rgba(0, 0, 100, 0.5);
+    border: 3px solid  rgb(33, 33, 150, 0.2);
+    border-radius: 19px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0);
+    margin: auto;
+    width: 700px;
+}
+
+/*titulos del formulario que no tienen animacion*/
+.contenedor_subtitulos_formulario{
+    text-align: center;
+    margin: auto;
+}
+.subtitulos_formulario{
+    margin-bottom: 50px;
+}
+/*animacion de las las label del registro*/
+.input_formulario, .letrasReguistro_label {
+    display: block;
+    font-size: 1.0em;
+    outline: none;
+}
+
+.input_formulario {
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-left: 0px solid rgba(0, 0, 0, 0.3);
+    border-right: 0px solid rgba(0, 0, 0, 0.3);
+    border-top: 0px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+.input_formulario:focus + .letrasReguistro_label{
+    margin-top: -110px;
+    font-weight: bolder;
+    /*anima cuando una pripiedad cambiad e valor*/
+    transition: all 0.2s;
+}
+.letrasReguistro_label{
+    position: absolute;
+    margin-top: -80px;
+    z-index: -20;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+.fijar {
+    margin-top: -110px;
+    text-align: center;
+}
+
+
+
+/*letras del btn registrarme*/
+.btnLetras {
+    background-color: rgba(255, 255, 255, 0.5);
+	border: 0px solid rgb(2, 2, 252, 0.1);
+    border-radius: 50px;
+    margin-top: 15px;
+    width: 130px;
+    height: 35px;
+}
+.btnLetras:hover{
+    background-color: rgb(255, 255, 255, 0.8);
+    box-shadow: 0 0 9px 1px rgb(255, 255, 255, 0.8);
+    transition: all 0.2s;
+    }
+.btnLetras:focus{
+    box-shadow: 0 0 9px 1px rgba(156, 98, 98, 0.5);
+    transition: all 0.5s;
+    outline: none;
+}
+/*contenedor de la fecha de nacimiento*/
+.contenedorFilas{
+    text-align: center;
+    margin: auto;
+}
+/*la barra de contactos y demas funciones*/
+.rectanguloContactos{
+    background-color:#000020;
+    margin: auto;
+    margin-top: 40px;
+}
+/*botones de la barra de contactos  de la parte inferior*/
+.btnContactos{
+    color: rgb(255, 255, 255);
+    line-height: 63px;
+}
+/*iamgenes-iconos del fueter*/
+.img_footer{
+    margin-top: 18px;
+    height: 25px;
+    border-radius: 9px;
+}

@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: rgba(33, 33, 56, 0.2);
+}
+/*titulo de bienvenido*/
+.tituloMayor {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 82px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*/////////CLASS DEL LABEL/////////*/
+/*letras de arriba donde se escribe las credenciales*/
+.registroLetrasRelleno {
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+/*icono de la barra*/
+.imgIconoBarra {
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 30px;
+}
+/*tamaño del imput*/
+.colorLetrasBotonLogin {
+  text-align: left;
+  padding-bottom: 2px;
+  padding-left: 30px;
+}
+
+/*boton registrarse y su estilo*/
+.botonIndividualReguistrase {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 0px solid rgb(2, 2, 252, 0.1);
+  border-radius: 50px;
+  margin-top: 15px;
+  width: 130px;
+  height: 35px;
+}
+.botonIndividualReguistrase:hover {
+  background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 0 0 9px 1px rgb(255, 255, 255);
+  transition: all 0.2s;
+}
+.botonIndividualReguistrase:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 9px 1px rgba(156, 98, 98, 0.5);
+  transition: all 0.5s;
+  outline: none;
+}
+/*personalizacion del boton reguistrarse*/
+/*del boton ingresar inicia*/
+.position_btn {
+  text-align: center;
+}
+.botonesIngresar {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0px solid rgb(2, 2, 252, 0.1);
+  border-radius: 50px;
+  margin-top: 15px;
+  width: 130px;
+  height: 35px;
+}
+.botonesIngresar:hover {
+  background-color: rgb(255, 255, 255, 0.8);
+  box-shadow: 0 0 9px 1px rgb(255, 255, 255, 0.8);
+  transition: all 0.2s;
+}
+.botonesIngresar:focus {
+  box-shadow: 0 0 9px 1px rgba(156, 98, 98, 0.5);
+  transition: all 0.5s;
+  outline: none;
+}
+/*del boton ingresar termina*/
+.posicionBotonReguistrarse {
+  text-align: right;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/*fondo y hubiacion de la fila de nav*/
+.fila {
+  background-image: url("../img/fondo_Barra_Direcciones.jpg");
+}
+/*clase navegadorBarra*/
+.navegadorBarra {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 17px;
+}
+/*la barra de contactos y demas funciones*/
+.rectanguloContactos {
+  background-color: #000020;
+  margin: auto;
+}
+/*botones de la barra de contactos  de la parte inferior*/
+.btnContactos {
+  color: rgb(255, 255, 255);
+  line-height: 50px;
+}
+/*/////////COMIENZA ANIMACION CUANDO PONES MAUSE EN LOS INPUT/////////*/
+.formulario {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 22px;
+  padding-top: 50px;
+  padding-bottom: 25.5px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-color: rgba(0, 0, 100, 0.5);
+  border: 3px solid rgb(33, 33, 150, 0.2);
+  border-radius: 30px;
+}
+
+.formulario__input,
+.formulario__label {
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+}
+.formulario__input {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 40px;
+  border-left: 0px solid rgba(0, 0, 0);
+  border-right: 0px solid rgba(0, 0, 0);
+  border-top: 0px solid rgba(0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0);
+}
+.formulario__input:focus {
+  /*esto es para el borde del input cuando lo seleccionas*/
+  outline: 1px solid;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  color: rgb(33, 33, 56);
+}
+/* el + es para que le afecte al elemento que le sigue*/
+.formulario__input:focus + .formulario__label {
+  /*esto es para el borde del input cuando lo seleccionas*/
+  margin-top: -135px;
+  font-weight: bold;
+  color: rgba(0, 0, 0);
+}
+.formulario__label {
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -90px;
+  z-index: -20;
+  transition: all 0.2s;
+}
+.fijar {
+  margin-top: -120px;
+  font-weight: bold;
+}
+/*/////////TERMINA ANIMACION CUANDO PONES MAUSE EN LOS INPUT/////////*/
+/*iamgenes-iconos del fueter*/
+.img_footer {
+  margin-top: 18px;
+  height: 25px;
+  border-radius: 9px;
+}

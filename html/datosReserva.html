@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="shortcut icon" type="imagen/x-icon" href="../img/Icono_Barra_Direcciones.png">
+
+  <title>HORARIOS</title>
+
+  <link rel="stylesheet" href="../css/datosReserva.css" type="text/css">
+  <!--cllinkeas en el head cuaquier archivo para utilizarlo-->
+
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="containerBarraArriba row text-center">
+      <div class="colVacio col-12 col-md-6 col-lg">
+        <img class="imgIconoBarra" style="height: 70px;" src="../img/Icono_Barra_Direcciones.png">
+      </div>
+      <div class="colVacio col">
+        <P></P>
+      </div>
+      <div class="colVacio col">
+        <P></P>
+      </div>
+      <div class="colFondo col-12 col-md-6 col-lg"">
+        <form action=" ../html/contenido.html #menuDeComida">
+        <button class="nombresDireccionesBarra">Volver al menú</button>
+        </form>
+      </div>
+      <div class="colFondo col-12 col-md-6 col-lg">
+        <form action="../html/reservarLugares.html #Platos ecuatorianos">
+          <button class="nombresDireccionesBarra">Ver lugares</button>
+        </form>
+      </div>
+      <div class="colFondo col-12 col-md-6 col-lg">
+        <form action="../html/perfil.html">
+          <button class="nombresDireccionesBarra">Perfil</button>
+        </form>
+      </div>
+      <div class="colFondo col-12 col-md-6 col-lg">
+        <form action="../index.html">
+          <button onclick="eliminarDatos();" class="nombresDireccionesBarra">Cerrar sesión</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <hr style="background-color: rgba(255, 255, 255, 0.5);">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h1 class="tituloMayor">DATOS DE RESERVA</h1>
+      </div>
+    </div>
+  </div>
+
+  <hr style="background-color: rgba(255, 255, 255, 0.5);">
+
+
+  <div class="fondoImg" style="border-top:1px solid rgb(255, 255, 255, 0.5);">
+
+
+
+
+
+
+
+
+
+    <section class="section">
+      <div class="centro">
+
+        <div>
+          <div class="row">
+            <div class="col">
+
+              <div class="rectangulo_Eleguido">
+                <label class="textos">Reservaste...</label>
+                <button type="button" class="btn-Dropdown" data-toggle="dropdown">
+                  <input class="platoEscogido_imput" id="platoElegido" type="text" readonly>
+                </button>
+
+                <div class="contenedor_Platos dropdown-menu">
+                  <button class="btn_opc_platos" onclick="cambiarPlato(platoCambio1.value,precio_1.value);">
+                    <input id="platoCambio1" class="input_platos" value="Papas fritas queso y tocino"
+                      readonly></input><br>
+                    <input class="rectanguloPrecioCambio" id="precio_1" value="PRECIO: 4,10">
+                  </button><br>
+                  <button class="btn_opc_platos" onclick="cambiarPlato(platoCambio2.value,precio_2.value);">
+                    <input id="platoCambio2" class="input_platos" value="Cono de camarones" readonly></input><br>
+                    <input class="rectanguloPrecioCambio" id="precio_2" value="PRECIO: 7,35">
+                  </button><br>
+                  <button class="btn_opc_platos" onclick="cambiarPlato(platoCambio3.value,precio_3.value);">
+                    <input id="platoCambio3" class="input_platos" value="Patacones" readonly></input><br>
+                    <input class="rectanguloPrecioCambio" id="precio_3" value="PRECIO: 7,35">
+                  </button><br>
+                  <button class="btn_opc_platos" onclick="cambiarPlato(platoCambio4.value,precio_4.value);">
+                    <input id="platoCambio4" class="input_platos" value="Desayuno montubio" readonly></input><br>
+                    <input class="rectanguloPrecioCambio" id="precio_4" value="PRECIO: 9,73">
+                  </button><br>
+                  <button class="btn_opc_platos" onclick="cambiarPlato(platoCambio5.value,precio_5.value);">
+                    <input id="platoCambio5" class="input_platos" value="Desatuno costeño" readonly></input><br>
+                    <input class="rectanguloPrecioCambio" id="precio_5" value="PRECIO: 9,13">
+                  </button><br>
+                  <button class="btn_opc_platos" onclick="cambiarPlato(platoCambio6.value,precio_6.value);">
+                    <input id="platoCambio6" class="input_platos" value="Ceviche" readonly></input><br>
+                    <input class="rectanguloPrecioCambio" id="precio_6" value="PRECIO: 2,50">
+                  </button><br>
+                  <button class="btn_opc_platos" onclick="cambiarPlato(platoCambio7.value,precio_7.value);">
+                    <input id="platoCambio7" class="input_platos" value="Fanesca" readonly></input><br>
+                    <input class="rectanguloPrecioCambio" id="precio_7" value="PRECIO: 3,50">
+                  </button><br>
+                  <button class="btn_opc_platos" onclick="cambiarPlato(platoCambio8.value,precio_8.value);">
+                    <input id="platoCambio8" class="input_platos" value="Encebollado" readonly></input><br>
+                    <input class="rectanguloPrecioCambio" id="precio_8" value="PRECIO: 2,49">
+                  </button><br>
+                  <button class="btn_opc_platos" onclick="cambiarPlato(platoCambio9.value,precio_9.value);">
+                    <input id="platoCambio9" class="input_platos" value="Tortillas con caucara" readonly></input>
+                    <input class="rectanguloPrecioCambio" id="precio_9" value="PRECIO: 1,99">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="rectangulo_Eleguido">
+                <label class="textos">Tu restaurante...</label>
+
+                <button type="button" class="btn-Dropdown" data-toggle="dropdown">
+                  <input class="restauranteEscogido_imput" id="restauranteEleguido" type="text" readonly>
+                </button>
+
+                <div class="contenedor_restaurantes dropdown-menu">
+                  <button class="btn_opc_restaurantes" onclick="cambiarLugarReserva(LugarCambio1.value);">
+                    <input id="LugarCambio1" class="input_restaurantes" value="L'Arcadia Pasta Gourmet"
+                      readonly></input><br>
+                  </button>
+                  <button class="btn_opc_restaurantes" onclick="cambiarLugarReserva(LugarCambio2.value);">
+                    <input id="LugarCambio2" class="input_restaurantes" value="Café San Blas" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_restaurantes" onclick="cambiarLugarReserva(LugarCambio3.value);">
+                    <input id="LugarCambio3" class="input_restaurantes" value="Corvinas !Don Jimmy!"
+                      readonly></input><br>
+                  </button>
+                  <button class="btn_opc_restaurantes" onclick="cambiarLugarReserva(LugarCambio4.value);">
+                    <input id="LugarCambio4" class="input_restaurantes" value="Restaurante Casa Gangotena"
+                      readonly></input><br>
+                  </button>
+                  <button class="btn_opc_restaurantes" onclick="cambiarLugarReserva(LugarCambio5.value);">
+                    <input id="LugarCambio5" class="input_restaurantes" value="Bocatto Da Fiorentino"
+                      readonly></input><br>
+                  </button>
+                  <button class="btn_opc_restaurantes" onclick="cambiarLugarReserva(LugarCambio6.value);">
+                    <input id="LugarCambio6" class="input_restaurantes" value="SOMOS Restaurante Ecuador"
+                      readonly></input><br>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <label class="textos">¿ Para que fecha reservarás ?</label><br>
+            <div>
+              <button type="button" class="btn_fecha_dropdown" data-toggle="dropdown">
+                <input class="restauranteEscogido_imput" value="" placeholder="fecha" id="fechaElegido" type="text"
+                  readonly>
+              </button>
+
+              <div class="contenedor_fecha dropdown-menu">
+                <button class="btn_opc_fecha" onclick="fecha(fecha1.value);">
+                  <input id="fecha1" class="input_fecha" value="1" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha2.value);">
+                  <input id="fecha2" class="input_fecha" value="2" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha3.value);">
+                  <input id="fecha3" class="input_fecha" value="3" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha4.value);">
+                  <input id="fecha4" class="input_fecha" value="4" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha5.value);">
+                  <input id="fecha5" class="input_fecha" value="5" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha6.value);">
+                  <input id="fecha6" class="input_fecha" value="6" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha7.value);">
+                  <input id="fecha7" class="input_fecha" value="7" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha8.value);">
+                  <input id="fecha8" class="input_fecha" value="8" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha9.value);">
+                  <input id="fecha9" class="input_fecha" value="9" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha10.value);">
+                  <input id="fecha10" class="input_fecha" value="10" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha11.value);">
+                  <input id="fecha11" class="input_fecha" value="11" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha12.value);">
+                  <input id="fecha12" class="input_fecha" value="12" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha13.value);">
+                  <input id="fecha13" class="input_fecha" value="13" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha14.value);">
+                  <input id="fecha14" class="input_fecha" value="14" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha15.value);">
+                  <input id="fecha15" class="input_fecha" value="15" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha16.value);">
+                  <input id="fecha16" class="input_fecha" value="16" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha17.value);">
+                  <input id="fecha17" class="input_fecha" value="17" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha18.value);">
+                  <input id="fecha18" class="input_fecha" value="18" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha19.value);">
+                  <input id="fecha19" class="input_fecha" value="19" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha20.value);">
+                  <input id="fecha20" class="input_fecha" value="20" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha21.value);">
+                  <input id="fecha21" class="input_fecha" value="21" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha22.value);">
+                  <input id="fecha22" class="input_fecha" value="22" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha23.value);">
+                  <input id="fecha23" class="input_fecha" value="23" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha24.value);">
+                  <input id="fecha24" class="input_fecha" value="24" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha25.value);">
+                  <input id="fecha25" class="input_fecha" value="25" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha26.value);">
+                  <input id="fecha26" class="input_fecha" value="26" readonly></input><br>
+                </button><br>
+                <button class="btn_opc_fecha" onclick="fecha(fecha27.value);">
+                  <input id="fecha27" class="input_fecha" value="27" readonly></input><br>
+                </button><br>
+              </div>
+
+
+              <div>
+                <button type="button" class="btn_mes_dropdown" data-toggle="dropdown">
+                  <input class="restauranteEscogido_imput" value="" placeholder="mes" id="mesEleguido" type="text"
+                    readonly>
+                </button>
+
+                <div class="contenedor_mes dropdown-menu"">
+                <button class=" btn_opc_mes" onclick="mes(mes1.value);">
+                  <input id="mes1" class="input_mes" value="Enero" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes2.value);">
+                    <input id="mes2" class="input_mes" value="febrero" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes3.value);">
+                    <input id="mes3" class="input_mes" value="marzo" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes4.value);">
+                    <input id="mes4" class="input_mes" value="abril" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes5.value);">
+                    <input id="mes5" class="input_mes" value="mayo" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes6.value);">
+                    <input id="mes6" class="input_mes" value="junio" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes7.value);">
+                    <input id="mes7" class="input_mes" value="julio" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes8.value);">
+                    <input id="mes8" class="input_mes" value="agosto" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes9.value);">
+                    <input id="mes9" class="input_mes" value="septiembre" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes10.value);">
+                    <input id="mes10" class="input_mes" value="octubre" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes11.value);">
+                    <input id="mes11" class="input_mes" value="noviembre" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_mes" onclick="mes(mes12.value);">
+                    <input id="mes12" class="input_mes" value="diciembre" readonly></input><br>
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <button type="button" class="btn_year_dropdown" data-toggle="dropdown">
+                  <input class="restauranteEscogido_imput" value="" placeholder="año" id="yearEleguido" type="text"
+                    readonly>
+                </button>
+
+                <div class="contenedor_year dropdown-menu">
+                  <button class="btn_opc_year" onclick="year(year1.value);">
+                    <input id="year1" class="input_year" value="2020" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_year" onclick="year(year2.value);">
+                    <input id="year2" class="input_year" value="2021" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_year" onclick="year(year3.value);">
+                    <input id="year3" class="input_year" value="2022" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_year" onclick="year(year4.value);">
+                    <input id="year4" class="input_year" value="2023" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_year" onclick="year(year5.value);">
+                    <input id="year5" class="input_year" value="2024" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_year" onclick="year(year6.value);">
+                    <input id="year6" class="input_year" value="2025" readonly></input><br>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="">
+              <label class="textos">¿ Para qué hora reservarás ?</label>
+
+              <div>
+                <button type="button" class="btn_hora_dropdown" data-toggle="dropdown">
+                  <input class="restauranteEscogido_imput" value="" placeholder="hora" id="horaElegido" type="text"
+                    readonly>
+                </button>
+
+                <div class="contenedor_hora dropdown-menu">
+                  <button class="btn_opc_hora" onclick="hora(hora1.value);">
+                    <input id="hora1" class="input_hora" value="8:00 - 9:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora2.value);">
+                    <input id="hora2" class="input_hora" value="9:00 - 10:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora3.value);">
+                    <input id="hora3" class="input_hora" value="10:00 - 11:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora4.value);">
+                    <input id="hora4" class="input_hora" value="11:00 - 12:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora5.value);">
+                    <input id="hora5" class="input_hora" value="12:00 - 13:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora6.value);">
+                    <input id="hora6" class="input_hora" value="13:00 - 14:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora7.value);;">
+                    <input id="hora7" class="input_hora" value="14:00 - 15:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora8.value);">
+                    <input id="hora8" class="input_hora" value="15:00 - 16:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora9.value);">
+                    <input id="hora9" class="input_hora" value="16:00 - 17:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora10.value);">
+                    <input id="hora10" class="input_hora" value="17:00 - 18:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora11.value);">
+                    <input id="hora11" class="input_hora" value="18:00 - 19:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora12.value);">
+                    <input id="hora12" class="input_hora" value="19:00 - 20:00" readonly></input><br>
+                  </button>
+                  <button class="btn_opc_hora" onclick="hora(hora13.value);">
+                    <input id="hora13" class="input_hora" value="20:00 - 21:00" readonly></input><br>
+                  </button>
+
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="">
+
+            <div class="">
+              <label class="textos">Número de adultos</label><br>
+
+              <button type="button" class="btn_adultos_dropdown" data-toggle="dropdown">
+                <input class="restauranteEscogido_imput" value="" placeholder="adultos" id="adultosElegido" type="text"
+                  readonly>
+              </button>
+
+              <div class="contenedor_adultos dropdown-menu">
+                <button class="btn_opc_adultos" onclick="adultos(adultos1.value);">
+                  <input id="adultos1" class="input_adultos" value="1" readonly></input><br>
+                </button>
+                <button class="btn_opc_adultos" onclick="adultos(adultos2.value);">
+                  <input id="adultos2" class="input_adultos" value="2" readonly></input><br>
+                </button>
+                <button class="btn_opc_adultos" onclick="adultos(adultos3.value);">
+                  <input id="adultos3" class="input_adultos" value="3" readonly></input><br>
+                </button>
+                <button class="btn_opc_adultos" onclick="adultos(adultos4.value);">
+                  <input id="adultos4" class="input_adultos" value="4" readonly></input><br>
+                </button>
+                <button class="btn_opc_adultos" onclick="adultos(adultos5.value);">
+                  <input id="adultos5" class="input_adultos" value="5 - 9" readonly></input><br>
+                </button>
+                <button class="btn_opc_adultos" onclick="adultos(adultos6.value);">
+                  <input id="adultos6" class="input_adultos" value="7 - 12" readonly></input><br>
+                </button>
+                <div>
+                  <button class="btn_opc_adultos_listo" onclick="adultos(adultosLlenar.value);">
+                    <input type="number" id="adultosLlenar" class="input_adultos_escribir" value="">listo</input><br>
+                  </button>
+                </div>
+              </div>
+
+
+
+
+            </div>
+            <div class="">
+              <label class="textos">¿ Número de niños ?</label><br>
+
+              <button type="button" class="btn_boy_dropdown" data-toggle="dropdown">
+                <input class="restauranteEscogido_imput" value="" placeholder="niños" id="boyElegido" type="text"
+                  readonly>
+              </button>
+
+              <div class="contenedor_boy dropdown-menu">
+                <button class="btn_opc_boy" onclick="boy(boy1.value);">
+                  <input id="boy1" class="input_boy" value="1" readonly></input><br>
+                </button>
+                <button class="btn_opc_boy" onclick="boy(boy2.value);">
+                  <input id="boy2" class="input_boy" value="2" readonly></input><br>
+                </button>
+                <button class="btn_opc_boy" onclick="boy(boy3.value);">
+                  <input id="boy3" class="input_boy" value="3" readonly></input><br>
+                </button>
+                <button class="btn_opc_boy" onclick="boy(boy4.value);">
+                  <input id="boy4" class="input_boy" value="4" readonly></input><br>
+                </button>
+                <button class="btn_opc_boy_listo" onclick="boy(boy5.value);">
+                  <input id="boy5" class="input_boy_escribir" value="">listo</input><br>
+                </button>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="">
+
+            <div>
+              <button class="botones"
+                onclick="confirmarElecciones(fechaElegido.value,mesEleguido.value,yearEleguido.value,horaElegido.value,adultosElegido.value,boyElegido.value);"
+                style="width: 140px;">Confirmar</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <script src="../js/datosReserva.js"></script>
+
+
+
+
+
+
+    <!--comienza la barra de contactos y demas-->
+
+    <div class="rectanguloContactos row text-left">
+      <div class="col col-md-6 col-lg">
+        <a class="btnContactos" href="#">Contactos</a>
+      </div>
+      <div class="col col-md-6 col-lg">
+        <a class="btnContactos" href="#">Dirección</a>
+      </div>
+      <div class="col col-md-6 col-lg">
+        <a class="btnContactos" href="#">Información</a>
+      </div>
+      <div class="col col-md-6 col-lg">
+        <a class="btnContactos" href="#">Referencias_legales</a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-facebook.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-youtube.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-twiter.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-instagram.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-whattsap.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-pinteresk.jpg"></a>
+      </div>
+      <div class="col col-md-6 col-lg" style="text-align: right;">
+        <a href="#"><img class="img_footer" src="../img/iconos-redes-google.jpg"></a>
+      </div>
+    </div>
+
+    <!--termina la barra de contactos y demas-->
+
+
+
+    <script src="../js/datosReserva.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

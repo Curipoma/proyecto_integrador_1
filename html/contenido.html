@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagen/x-icon" href="../img/Icono_Barra_Direcciones.png">
+
+
+    <title>Contenido platos de comida</title>
+    <link href="../css/contenido.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <!--comienza la barra de dirreciones y demas funcoines-->
+    <!--class="fixed-top"-->
+    <nav>
+        <div class="containerBarraArriba row text-center">
+            <div class="colVacio col-12 col-md-6 col-lg">
+                <img class="imgIconoBarra" style="height: 70px;" src="../img/Icono_Barra_Direcciones.png">
+            </div>
+            <div class="colVacio col">
+                <P></P>
+            </div>
+            <div class="colVacio col">
+                <P></P>
+            </div>
+            <div class="colVacio col">
+                <P></P>
+            </div>
+            <div class="colFondo col-12 col-md-6 col-lg">
+                <form action="../html/reservarLugares.html #Platos ecuatorianos">
+                    <button class="nombresDireccionesBarra">Ver Lugares</button>
+                </form>
+            </div>
+            <div class="colFondo col-12 col-md-6 col-lg">
+                <form action="../html/perfil.html">
+                    <button class="nombresDireccionesBarra">Perfil</button>
+                </form>
+            </div>
+            <div class="colFondo col-12 col-md-6 col-lg">
+                <form action="../index.html">
+                    <button onclick="eliminarDatos();" class="nombresDireccionesBarra">Cerrar sesión</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--termina la barra de dirreciones y demas funcoines-->
+
+    <div class="todo_Contenido">
+        <!--comienza todo el contenido-->
+        <div>
+            <div class="container" style="padding-top: 20px;">
+                <div class="tituloDentro">PLATOS RECOMENDADOS</div>
+            </div>
+
+            <div class="container">
+                <div class="nombreDirrecion"><u>QUITO - ECUADOR</u></div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--comienz prueba del despliege-->
+
+        <!--aqui comienza el menu-->
+        <footer id="menuDeComida"></footer>
+        <div class="container" >
+            <div class="row" style="margin-bottom: 90px;">
+
+                <div class="rectanguloMenu col-12 col-md-6 col-lg">
+
+                    <div style="padding-left: 30%; padding-right: 30%;">
+                        <h2 class="tituloMenu">MENÚ</h2>
+                    </div>
+
+                    <div>
+                        <h1 class="titulosServicios">ENTRADAS</h1>
+                    </div>
+                    <form class="btnAnclaInternaPlatos" action="#papasFritasQueso">
+                        <div>
+                            <button class="letrasMenuPlatosDemas" style="width: 300px; height: 35px;">
+                                PAPAS FRITAS CON QUESO Y TOCINO
+                            </button>
+                        </div>
+                    </form>
+                    <form class="btnAnclaInternaPlatos" action="#conoCamarones">
+                        <div>
+                            <button class="letrasMenuPlatosDemas" style="width: 300px; height: 35px;">
+                                CONO DE CAMARONES
+                            </button>
+                        </div>
+                    </form>
+                    <form class="btnAnclaInternaPlatos" action="#patacones">
+                        <div>
+                            <button class="letrasMenuPlatosDemas" style="width: 300px; height: 35px;">
+                                PATACONES
+                            </button>
+                        </div>
+                    </form>
+                    <div>
+                        <div>
+                            <div class="">
+                                <form class="btnAnclaInternaPlatos" action="#desayunoMontuvio">
+                                    <div>
+                                        <button class="letrasMenuPlatosDemas" style="width: 300px; height: 35px;">
+                                            DESAYUNO MONTUBIO
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <form class="btnAnclaInternaPlatos" action="#desayunoCosteno">
+                                    <div>
+                                        <button class="letrasMenuPlatosDemas" style="width: 300px; height: 35px;">
+                                            DESAYUNO COSTEÑO
+                                        </button>
+                                    </div>
+                                </form>
+                                <div style="margin-top: 10px;">
+                                    <h1 class="titulosServicios">PLATOS TÍPICOS</h1>
+                                </div>
+                                <form class="btnAnclaInternaPlatos" action="#CEVICHE">
+                                    <button class="letrasMenuPlatosDemas" style="width: 300px; height: 35px;">
+                                        CEVICHE
+                                    </button>
+                                </form>
+                                <form class="btnAnclaInternaPlatos" action="#FANESCA">
+                                    <button class="letrasMenuPlatosDemas" style="width: 300px; height: 35px;">
+                                        FANESCA
+                                    </button>
+                                </form>
+                                <form class="btnAnclaInternaPlatos" action="#ENCEBOLLADO">
+                                    <button class="letrasMenuPlatosDemas" style="width: 300px; height: 35px;">
+                                        ENCEBOLLADO
+                                    </button>
+                                </form>
+                                <form class="btnAnclaInternaPlatos" action="#TORTILLAS">
+                                    <button class="letrasMenuPlatosDemas" style="width: 300px; height: 35px;">
+                                        TORTILLAS CON CAUCARA
+                                    </button>
+                                </form>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--aqui termina el menu-->
+
+                <!--termina prueba del despliege-->
+
+
+                <!--comienza las normas sanitarias-->
+
+                <div class="col">
+                    <div class="normasSanitarias">PRECAUCIONES DE SEGURIDAD SANITARIAS</div>
+                    <div class="rectanguloNormasSanitarias">
+                        <div>
+                            <b>Limpieza y desinfeccion </b>
+                        </div>
+                        <div>Superfices desinfectadas despues de cada uso</div>
+                        <div>Limpieza profunda diaria de zonas comunes</div>
+                        <div>Pago sin contacto disponible</div></br>
+                        <div>
+                            <b>Equipamiento de protección personal</b>
+                        </div>
+                        <div>El personal de piso utiliza masarillas </div>
+                        <div>Los comensales debe utilizar mascarilla a menos que esten comiendo o bebiendo</div><br />
+                        <div>
+                            <b>Distanciamiento social con los demas comensales y/o personal</b>
+                        </div>
+                        <div>Cantidad limitada de comensales en una mesa</div>
+                        <div>tiempo máximo de estadia en el restauran 1 hora </div>
+                    </div>
+                </div>
+                <!--termina las normas sanitarias-->
+            </div>
+        </div>
+    
+
+
+
+
+
+
+    <!--aqui comienza a detallar los platos y demas servicios-->
+    <footer id="contenidoVerMas"></footer>
+    <div class="desayunoRectangulo">
+        <!-- aqui comienza la descripcion de entradas-->
+        <h1 class="rectanguloServiciosPlatos">ENTRADAS</h1><br><br>
+
+
+        <div class="filaPlatos row">
+            <!--comienza la primera entradad-->
+            <div class="col">
+                <footer id="papasFritasQueso"></footer>
+                <li class="rectanguloContenedorPlatos">
+
+                    <input class="tituloPlatos" id="plato_papasFritas" type="text" value="Papas fritas queso y tocino"
+                        readonly>
+
+
+                    <div class="rectanguloDescripcionPlato">
+                        <p>Porción de papas fritas crocantes con paprika bañadas en queso cheddar y tocino picado</p>
+                    </div>
+                    <div class="imgPosicion">
+                        <img src="../img/papasTocinoQueso.jpg" class="imgSize card-img-top"
+                            style="height: auto; width: 100%;" alt=" Entrada papitas fritas con queso y tocino">
+                    </div>
+                    <div class="cuadradoPrecio">
+                        <input class="rectanguloPrecio" id="precio_1" type="text" value="PRECIO: 4,10" readonly>
+                    </div>
+                    <div class="rectanguloLink">
+                        <a onclick="platoEscogido(plato_papasFritas.value,precio_1.value);" class="reservarCuadrado"
+                            href="../html/datosReserva.html"><strong>¡ RESERVAR !</strong></a>
+                    </div><br>
+                </li><br><br>
+            </div>
+            <!--termina la primera entradad-->
+
+            <!--comienza la segunda entradad-->
+            <div class="col">
+                <footer id="conoCamarones_footer"></footer>
+                <li class="rectanguloContenedorPlatos">
+                    <input class="tituloPlatos" id="plato_conoCamarones" type="text" value="Cono de camarones" readonly>
+                    <h1 class="rectangulo"></h1>
+                    <div class="rectanguloDescripcionPlato">
+                        <p>Porción de camarones apanados en cama de papas fritas acompañado de salsa tártara</p>
+                    </div>
+                    <div class="imgPosicion">
+                        <img src="../img/camarones_Carta.jpg" class="imgSize card-img-top"
+                            style="height: 100%; width: 100%;" alt="Entrada cono de camarones">
+                    </div>
+                    <div class="cuadradoPrecio">
+                        <input class="rectanguloPrecio" id="precio_2" type="text" value="PRECIO: 7,35" readonly>
+                    </div>
+                    <div class="rectanguloLink">
+                        <a onclick="platoEscogido(plato_conoCamarones.value,precio_2.value);" class="reservarCuadrado"
+                            href="../html/datosReserva.html"><strong>¡ RESERVAR !</strong></a>
+                    </div><br>
+                </li><br><br>
+            </div>
+            <!--ternima la segunda entradad-->
+            <div class="col">
+                <!--comienza la tercera entradad-->
+                <footer id="patacones"></footer>
+                <li class="rectanguloContenedorPlatos">
+                    <input class="tituloPlatos" id="plato_patacones" type="text" value="Patacones" readonly>
+                    <h1 class="rectangulo"></h1>
+                    <div class="rectanguloDescripcionPlato">
+                        <p>8 Crocantes patacones acompañados con un delicioso ají costeño</p>
+                    </div>
+                    <div class="imgPosicion">
+                        <img src="../img/patacones_Carta.jpg" class="imgSize card-img-top"
+                            style="height: 100%; width: 100%;" alt="Imagen cono de patacones" />
+                    </div>
+                    <div class="cuadradoPrecio">
+                        <input class="rectanguloPrecio" id="precio_3" type="text" value="PRECIO: 7,35" readonly>
+                    </div>
+                    <div class="rectanguloLink">
+                        <a onclick="platoEscogido(plato_patacones.value,precio_3.value);" class="reservarCuadrado"
+                            href="../html/datosReserva.html"><strong>¡ RESERVAR !</strong></a>
+                    </div><br>
+                </li>
+                <!--termina la tercera entradad-->
+                <!--aqui termina la descripcion de entradas-->
+            </div>
+        </div>
+
+
+        <h1 class="rectanguloServiciosPlatos">Desayunos</h1><br><br>
+
+        <div class="filaPlatos row">
+            <div class="col">
+                <!--comienza el segundo plato-->
+                <footer id="desayunoMontuvio"></footer>
+                <li class="rectanguloContenedorPlatos">
+                    <input class="tituloPlatos" id="plato_desayunoMontubio" value="Desayuno montubio" readonly>
+
+                    <div class="rectanguloDescripcionPlato">
+                        <p>Delicioso tigrillo con queso fundido, seco de lomo y 1 huevo frito. Disfrútalo con jugo de
+                            fruta natural y café en leche</p>
+                    </div>
+                    <div class="imgPosicion">
+                        <img src="../img/desayunoMontuvio.jpg" class="imgSize card-img-top"
+                            style="height: 100%; width: 100%;" alt="Desayuno montuvio">
+                    </div>
+
+                    <div class="cuadradoPrecio">
+                        <input class="rectanguloPrecio" id="precio_4" type="text" value="PRECIO: 9,73" readonly>
+                    </div>
+                    <div class="rectanguloLink">
+                        <a onclick="platoEscogido(plato_desayunoMontubio.value,precio_4.value);" class="reservarCuadrado"
+                            href="../html/datosReserva.html"><strong>¡ RESERVAR !</strong></a>
+                    </div><br>
+                </li><br><br><br><br><br>
+                <!--comienza el segundo plato-->
+            </div>
+            <div class="col">
+                <!--comienza el tercer plato-->
+                <footer id="desayunoCosteno"></footer>
+                <li class="rectanguloContenedorPlatos">
+                    <input class="tituloPlatos" id="plato_desayunoCosteño=" value="Desayuno costeño" readonly>
+                    <h1 class="rectangulo"></h1>
+                    <div class="rectanguloDescripcionPlato">
+                        <p>Delicioso tigrillo, con ají costeño acompañado por 2 huevos fritos. Jugo de fruta natural y
+                            café en leche o en agua</p>
+                    </div>
+                    <div class="imgPosicion">
+                        <img src="../img/desayunoCosteño.jpg" class="imgSize card-img-top"
+                            style="height: 100%; width: 100%;" alt="Desayuno costeño">
+                    </div>
+
+                    <div class="cuadradoPrecio">
+                        <input class="rectanguloPrecio" id="precio_5" type="text" value="PRECIO: 9,13" readonly>
+                    </div>
+                    <div class="rectanguloLink">
+                        <a onclick="platoEscogido(plato_desayunoCosteño.value,precio_5.value);" class="reservarCuadrado"
+                            href="../html/datosReserva.html"><strong>¡ RESERVAR !</strong></a>
+                    </div><br>
+                </li>
+                <!--termina el tercer plato-->
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <!--aqui comineza mas contenido acerca de platos tipicos del ecuador-->
+        <h1 class="rectanguloServiciosPlatos">PLATOS TÍPICOS</h1><br><br>
+        <div class="filaPlatos row">
+            <div class="col">
+                <!--comienza el priemr plato tipico del ecuador-->
+                <footer id="CEVICHE"></footer>
+                <li class="rectanguloContenedorPlatos">
+                    <input class="tituloPlatos" id="plato_ceviche" value="Ceviche" readonly>
+                    <h1 class="rectangulo"></h1>
+                    <div class="rectanguloDescripcionPlato">
+                        <p>Ceviche o cebiche, como quiera que se lo escriba, este platillo se ha convertido en uno de
+                            los más tradicionales
+                            y populares de toda la costa de Latinoamérica.</p>
+                    </div>
+                    <div class="imgPosicion">
+                        <img src="../img/ceviche.jpg" class="imgSize card-img-top" style="height: 100%; width: 100%;"
+                            alt="platos tipicos del ecuador">
+                    </div>
+
+                    <div class="cuadradoPrecio">
+                        <input class="rectanguloPrecio" id="precio_6 type="text" value="PRECIO: 2,50" readonly>
+                    </div>
+                    <div class="rectanguloLink">
+                        <a onclick="platoEscogido(plato_ceviche.value,precio_6.value);" class="reservarCuadrado"
+                            href="../html/datosReserva.html"><strong>¡ RESERVAR !</strong></a>
+                    </div><br>
+                </li><br><br><br><br><br>
+                <!--termina el priemr plato tipico del ecuador-->
+            </div>
+            <div class="col">
+                <!--comienza el segundo plato tipico del ecuador-->
+                <footer id="FANESCA"></footer>
+                <li class="rectanguloContenedorPlatos">
+                    <input class="tituloPlatos" id="plato_fanesca" value="Fanesca" readonly>
+                    <h1 class="rectangulo"></h1>
+                    <div class="rectanguloDescripcionPlato">
+                        <p>La fanesca es una comida tradicional del Ecuador, pero también una metáfora:
+                            sirve para mezclar granos y pescado, y también… tendencias e ideologías.</p>
+                    </div>
+                    <div class="imgPosicion">
+                        <img src="../img/fanesca.jpg" class="imgSize card-img-top" style="height: 100%; width: 100%;"
+                            alt="platos tipicos del ecuador">
+                    </div>
+
+                    <div class="cuadradoPrecio">
+                        <input class="rectanguloPrecio" id="precio_7" value="PRECIO: 3,50" readonly>
+                    </div>
+                    <div class="rectanguloLink">
+                        <a onclick="platoEscogido(plato_fanesca.value,precio_7.value);" class="reservarCuadrado"
+                            href="../html/datosReserva.html"><strong>¡ RESERVAR !</strong></a>
+                    </div><br>
+                </li><br><br><br><br><br>
+                <!--termina el segundo plato tipico del ecuador-->
+            </div>
+            <div class="col">
+                <!--comienza el tercer plato tipico del ecuador-->
+                <footer id="ENCEBOLLADO"></footer>
+                <li class="rectanguloContenedorPlatos">
+                    <input class="tituloPlatos" id="plato_encebollado" value="Encebollado" readonly>
+                    <h1 class="rectangulo"></h1>
+                    <div class="rectanguloDescripcionPlato">
+                        <p>El encebollado es uno de los platos favoritos de los ecuatorianos.
+                            , yuca, tomate, cebolla colorada y hierbas son los ingredientes base.
+                    </div>
+                    <div class="imgPosicion">
+                        <img src="../img/encebollado.jpg" class="imgSize card-img-top"
+                            style="height: 100%; width: 100%;" alt="platos tipicos del ecuador">
+                    </div>
+
+                    <div class="cuadradoPrecio">
+                        <input class="rectanguloPrecio" id="precio_8" type="text" value="PRECIO: 2,49" readonly>
+                    </div>
+                    <div class="rectanguloLink">
+                        <a onclick="platoEscogido(plato_encebollado.value,precio_8.value);" class="reservarCuadrado"
+                            href="../html/datosReserva.html"><strong>¡ RESERVAR !</strong></a>
+                    </div><br>
+                </li><br><br><br><br><br>
+                <!--termina el tercer plato tipico del ecuador-->
+            </div>
+        </div>
+        <div class="filaPlatos row">
+            <div class="col">
+                <!--comienza el cuarto plato tipico del ecuador-->
+                <footer id="TORTILLAS"></footer>
+                <li class="rectanguloContenedorPlatos">
+                    <input class="tituloPlatos" id="plato_tortillasCaucara" value="Tortillas con caucara" readonly>
+                    <h1 class="rectangulo"></h1>
+                    <div class="rectanguloDescripcionPlato">
+                        <p>
+                            Es un plato a base de carne de res, combinado con especias.
+                            Se la prepara frita o en estofado. Generalmente se sirve con llapingachos, ensalada de
+                            remolacha cocida y salsa de ají.</p>
+                    </div>
+                    <div class="imgPosicion">
+                        <img src="../img/caucara.jpg" class="imgSize card-img-top" style="height: 100%; width: 100%;"
+                            alt="platos tipicos del ecuador">
+                    </div>
+
+                    <div class="cuadradoPrecio">
+                        <input class="rectanguloPrecio" id="precio_9" type="text" value="PRECIO: 1,99" readonly>
+                    </div>
+                    <div class="rectanguloLink">
+                        <a onclick="platoEscogido(plato_tortillasCaucara.value,precio_9.value);" class="reservarCuadrado"
+                            href="../html/datosReserva.html"><strong>¡ RESERVAR !</strong></a>
+                    </div><br>
+                </li><br><br><br><br><br>
+                <!--termina el cuarto plato tipico del ecuador-->
+                <!--aqui termina mas contenido acerca de platos tipicos del ecuador-->
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div><!-- aqui termina la descripcion de los platos-->
+    </div>
+    <!--aqui termina a detallar los platos y demas servicios-->
+
+    </div>
+    <!--termina todo el contenido-->
+
+    <!--comienza la barra de contactos y demas-->
+    <div class="">
+        <div class="rectanguloContactos row text-left">
+            <div class="col col-md-6 col-lg">
+                <a class="btnContactos" href="#">Contactos</a>
+            </div>
+            <div class="col col-md-6 col-lg">
+                <a class="btnContactos" href="#">Dirección</a>
+            </div>
+            <div class="col col-md-6 col-lg">
+                <a class="btnContactos" href="#">Información</a>
+            </div>
+            <div class="col col-md-6 col-lg">
+                <a class="btnContactos" href="#">Referencias_legales</a>
+            </div>
+            <div class="col col-md-6 col-lg" style="text-align: right;">
+                <a href="#"><img class="img_footer" src="../img/iconos-redes-facebook.jpg"></a>
+            </div>
+            <div class="col col-md-6 col-lg" style="text-align: right;">
+                <a href="#"><img class="img_footer" src="../img/iconos-redes-youtube.jpg"></a>
+            </div>
+            <div class="col col-md-6 col-lg" style="text-align: right;">
+                <a href="#"><img class="img_footer" src="../img/iconos-redes-twiter.jpg"></a>
+            </div>
+            <div class="col col-md-6 col-lg" style="text-align: right;">
+                <a href="#"><img class="img_footer" src="../img/iconos-redes-instagram.jpg"></a>
+            </div>
+            <div class="col col-md-6 col-lg" style="text-align: right;">
+                <a href="#"><img class="img_footer" src="../img/iconos-redes-whattsap.jpg"></a>
+            </div>
+            <div class="col col-md-6 col-lg" style="text-align: right;">
+                <a href="#"><img class="img_footer" src="../img/iconos-redes-pinteresk.jpg"></a>
+            </div>
+            <div class="col col-md-6 col-lg" style="text-align: right;">
+                <a href="#"><img class="img_footer" src="../img/iconos-redes-google.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <!--termina la barra de contactos y demas-->
+
+    <script src="../js/contenido.js"></script>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

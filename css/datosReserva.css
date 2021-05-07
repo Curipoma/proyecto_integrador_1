@@ -1,0 +1,775 @@
+body {
+  background-color: rgb(33, 33, 56, 0.7);
+  background-attachment: fixed;
+}
+/*barra de dirrecciones en la parte de arriba*/
+.containerBarraArriba {
+  background-image: url("../img/fondo_Barra_Direcciones.jpg");
+  border-top: 0px;
+  line-height: 63px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+/*columnas vacias del nav*/
+.colVacio {
+  border-bottom: 0px;
+}
+/*icono de la barra*/
+.imgIconoBarra {
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 30px;
+}
+/*fondo de las columnas*/
+.colFondo {
+  background-color: #000020;
+  border: 3px solid rgb(33, 33, 150, 0.2);
+}
+/*fondo de la parte inferor*/
+/*style="background-image: url(/img/fondo_dela\ \ pagina.jpg);"*/
+.fondoImg {
+  background-image: url("../img/fondo_dela  pagina.jpg");
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/*direcciones de las barras su personalizacion en si :o*/
+.nombresDireccionesBarra {
+  background-color: rgb(0, 0, 0, 0);
+  border: 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.nombresDireccionesBarra:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.nombresDireccionesBarra:focus {
+  outline: none;
+}
+/*titulo de bienvenido*/
+.tituloMayor {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255, 0.9);
+  font-size: 82px;
+  border-radius: 19px;
+  border: 5px solid rgba(33, 33, 150, 0.3);
+  background-color: rgba(33, 33, 56);
+  margin: auto;
+  margin-top: 11px;
+  margin-bottom: 12px;
+}
+/*estilos de todos los textos*/
+.textos {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+/*restaurannte escogido*/
+.restauranteEscogido_imput {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+.platoEscogido_imput {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+/*secction >> contededor de todo el contenido*/
+.section {
+  background-color: rgba(33, 33, 56, 0.5);
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+/*rectangulo contenedor de los datos de la reserva, cuantas personas van y demas datos*/
+.centro {
+  background-color: rgba(33, 33, 65);
+  border: 5px solid rgba(33, 33, 150, 0.3);
+  border-radius: 19px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0);
+  margin: auto;
+  padding-top: 20px;
+  width: 300px;
+  text-align: center;
+}
+/*centra los datos del horario*/
+
+.botones {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid rgb(2, 2, 252, 0.1);
+  border-radius: 50px;
+  font-size: 19px;
+  color: rgb(0, 0, 0);
+  width: 100px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.botones:hover {
+  background-color: rgb(197, 197, 197);
+  box-shadow: 0 0 9px 1px rgb(197, 197, 197, 0.5);
+  border: 3px solid rgb(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+.botones:focus {
+  outline: none;
+}
+/*el input de la casilla que te pregunat si confirmas o on tu reservacion*/
+.mensajeConfirmar {
+  border: 2px solid rgb(255, 51, 0);
+  text-align: center;
+  height: 30px;
+  width: 95%;
+  border-radius: 10px;
+}
+
+/*cambio del precio ..cuando cambie el palto*/
+.rectanguloPrecioCambio {
+  display: none;
+}
+.mensajeConfirmar:hover {
+  border: 2px solid rgb(255, 0, 0);
+  /*(shadow-sombra)primero altura en X luego Y, luego difuminado*/
+  box-shadow: 0px 0px 35px rgb(255, 0, 0);
+  animation-name: background-color;
+  animation-duration: 200ms;
+}
+
+/*btn donde se muestra el input de restaurante y plato*/
+.btn-Dropdown {
+  background-color: rgb(0, 0, 0, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
+  outline: none;
+  width: 190px;
+  padding-bottom: 4px;
+}
+.btn-Dropdown:hover {
+  background-color: rgb(60, 60, 60);
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.2s;
+}
+.btn-Dropdown:focus {
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3);
+  background-color: rgb(40, 40, 40);
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.2s;
+}
+/*inpu del restaurante escojido*/
+.restauranteEscogido_imput {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 12px;
+  width: 100%;
+  line-height: 15px;
+  border: 0px solid rgba(0, 0, 0, 0);
+  outline: none;
+  text-align: center;
+}
+.restauranteEscogido_imput:focus {
+  outline: none;
+}
+/*imput donde se muestra dl plato escojido*/
+.platoEscogido_imput {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 12px;
+  width: 100%;
+  line-height: 15px;
+  border: 0px solid rgba(0, 0, 0, 0);
+  outline: none;
+  text-align: center;
+}
+.batoReserva {
+  background-color: rgba(170, 170, 170, 0);
+  outline: none;
+  border: 0px solid rgba(0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0);
+  width: 80px;
+  text-align: center;
+}
+.batoReserva:hover {
+  outline: none;
+}
+.batoReserva:focus {
+  outline: none;
+}
+
+.rectangulo_Eleguido {
+  background-color: rgba(33, 33, 100);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0);
+  border: 5px solid rgba(33, 33, 70);
+  border-radius: 10px;
+  width: 250px;
+  margin-top: 0px;
+  margin: auto;
+}
+.rectangulo_Eleguido:hover {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+/*COMIENZA LOS BOTONES DE LAS OPCIONES PARA CAMBIAR DATOS DE LA ESERVA*/
+/*PLATOS*/
+/*contenedor de las opciones para eescoger los platos*/
+.contenedor_Platos {
+  background-color: rgb(0, 0, 0, 0);
+  width: 20px;
+}
+/*btn de las opciones para elgir las opciones de cambio de los platos*/
+.btn_opc_platos {
+  width: 100px;
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  outline: none;
+  width: 170px;
+}
+.btn_opc_platos:focus {
+  outline: none;
+}
+/*input de las opciones para cambiar los platos*/
+.input_platos {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  text-align: left;
+  outline: none;
+  padding-left: 8px;
+  font-size: 12px;
+  width: 170px;
+}
+/*RESTAURANTES*/
+/*contenedor de las opciones para eescoger los restaurantes*/
+.contenedor_restaurantes {
+  background-color: rgb(0, 0, 0, 0);
+  width: 20px;
+}
+/*btn de las opciones para elgir las opciones de cambio de los restaurantes*/
+.btn_opc_restaurantes {
+  width: 100px;
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  outline: none;
+  width: 170px;
+}
+.btn_opc_restaurantes:focus {
+  outline: none;
+}
+/*input de las opciones para cambiar los restaurantes*/
+.input_restaurantes {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  text-align: left;
+  outline: none;
+  padding-left: 8px;
+  font-size: 12px;
+  width: 170px;
+}
+/*DIAS*/
+/*input de dropdown de los dias*/
+.btn_Dias_dropdown {
+  background-color: rgba(33, 33, 50);
+  border: 3px solid rgba(33, 33, 150, 0.5);
+  border-radius: 30px;
+  line-height: 0px;
+  width: 90px;
+  padding: 6px;
+  margin: 0px;
+}
+.btn_Dias_dropdown:hover {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0);
+}
+.btn_Dias_dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgb(150, 150, 150);
+}
+/*contenedor de las opciones para eescoger los dias*/
+.contenedor_dias {
+  background-color: rgb(0, 0, 0, 0);
+  width: 100px;
+}
+/*btn de las opciones para elgir las opciones de cambio de los dias*/
+.btn_opc_dias {
+  width: 100px;
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  outline: none;
+  width: 70px;
+}
+/*input de las opciones para cambiar los dias*/
+.input_dias {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  width: 70px;
+}
+/*FECHAS*/
+/*btn de dropdown de las opciones de cambio de decha*/
+.btn_fecha_dropdown {
+  background-color: rgba(33, 33, 50);
+  border: 3px solid rgba(33, 33, 150, 0.5);
+  border-radius: 30px;
+  line-height: 0px;
+  width: 90px;
+  padding: 6px;
+  margin: 20px;
+}
+.btn_fecha_dropdown:hover {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0);
+  transition: all 0.2s;
+}
+.btn_fecha_dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgb(150, 150, 150);
+}
+/*contenedor de las opciones para eescoger los dias*/
+.contenedor_fecha {
+  background-color: rgb(0, 0, 0, 0);
+  width: 0px;
+}
+/*btn de las opciones para elgir las opciones de cambio de los dias*/
+.btn_opc_fecha {
+  width: 100px;
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  outline: none;
+  width: 30px;
+}
+/*input de las opciones para cambiar los dias*/
+.input_fecha {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  width: 30px;
+}
+/*MESES*/
+/*opcines para elegir los meses*/
+/*btn de dropdown de las opciones de cambio de los meses*/
+.btn_mes_dropdown {
+  background-color: rgba(33, 33, 50);
+  border: 3px solid rgba(33, 33, 150, 0.5);
+  border-radius: 30px;
+  line-height: 0px;
+  width: 90px;
+  padding: 6px;
+}
+.btn_mes_dropdown:hover {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0);
+  transition: all 0.2s;
+}
+.btn_mes_dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgb(150, 150, 150);
+}
+/*contenedor de las opciones para eescoger los meses*/
+.contenedor_mes {
+  background-color: rgb(0, 0, 0, 0);
+  width: 0px;
+}
+/*btn de las opciones para elgir las opciones de cambio de los meses*/
+.btn_opc_mes {
+  width: 100px;
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  outline: none;
+  width: 80px;
+}
+/*input de las opciones para cambiar los meses*/
+.input_mes {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  width: 80px;
+}
+/*AÑOS*/
+/*opcines para elegir los años*/
+/*btn de dropdown de las opciones de cambio de los años*/
+.btn_year_dropdown {
+  background-color: rgba(33, 33, 50);
+  border: 3px solid rgba(33, 33, 150, 0.5);
+  border-radius: 30px;
+  line-height: 0px;
+  width: 90px;
+  padding: 6px;
+  margin: 20px;
+}
+.btn_year_dropdown:hover {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0);
+  transition: all 0.2s;
+}
+.btn_year_dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgb(150, 150, 150);
+}
+/*contenedor de las opciones para eescoger los años*/
+.contenedor_year {
+  background-color: rgb(0, 0, 0, 0);
+  width: 0px;
+}
+/*btn de las opciones para elgir las opciones de cambio de los sños*/
+.btn_opc_year {
+  width: 100px;
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  outline: none;
+  width: 80px;
+}
+/*input de las opciones para cambiar los años*/
+.input_year {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  width: 80px;
+}
+/*HORA*/
+/*opcines para elegir la hora*/
+/*btn de dropdown de las opciones de cambio de la hora*/
+.btn_hora_dropdown {
+  background-color: rgba(33, 33, 50);
+  border: 3px solid rgba(33, 33, 150, 0.5);
+  border-radius: 30px;
+  line-height: 0px;
+  width: 90px;
+  padding: 6px;
+}
+.btn_hora_dropdown:hover {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0);
+  transition: all 0.2s;
+}
+.btn_hora_dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgb(150, 150, 150);
+}
+/*contenedor de las opciones para eescoger la hora*/
+.contenedor_hora {
+  background-color: rgb(0, 0, 0, 0);
+  width: 0px;
+}
+/*btn de las opciones para elgir las opciones de cambio de la hora*/
+.btn_opc_hora {
+  width: 100px;
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  outline: none;
+  width: 80px;
+}
+/*input de las opciones para cambiar la hora*/
+.input_hora {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  width: 80px;
+}
+/*ADULTOS*/
+/*opcines para elegir la adultos*/
+/*btn de dropdown de las opciones de cambio de la adultos*/
+.btn_adultos_dropdown {
+  background-color: rgba(33, 33, 50);
+  border: 3px solid rgba(33, 33, 150, 0.5);
+  border-radius: 30px;
+  line-height: 0px;
+  width: 90px;
+  padding: 6px;
+}
+.btn_adultos_dropdown:hover {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0);
+  transition: all 0.2s;
+}
+.btn_adultos_dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgb(150, 150, 150);
+}
+/*contenedor de las opciones para eescoger la adultos*/
+.contenedor_adultos {
+  background-color: rgb(0, 0, 0, 0);
+  width: 0px;
+}
+/*btn de las opciones para elgir las opciones de cambio de la adultos*/
+.btn_opc_adultos {
+  width: 100px;
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  outline: none;
+  width: 80px;
+}
+/*input de las opciones para cambiar la adultos*/
+.input_adultos {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  width: 80px;
+}
+.input_adultos_escribir {
+  width: 100%;
+  outline: none;
+  border: 0px;
+}
+.btn_opc_adultos_listo {
+  background-color: rgba(75, 75, 75);
+  width: 80px;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.btn_opc_adultos_listo:focus {
+  outline: none;
+  background-color: rgba(120, 120, 120);
+}
+
+/*NIÑOS*/
+/*opcines para elegir la boy*/
+/*btn de dropdown de las opciones de cambio de la boy*/
+.btn_boy_dropdown {
+  background-color: rgba(33, 33, 50);
+  border: 3px solid rgba(33, 33, 150, 0.5);
+  border-radius: 30px;
+  line-height: 0px;
+  width: 90px;
+  padding: 6px;
+}
+.btn_boy_dropdown:hover {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0);
+  transition: all 0.2s;
+}
+.btn_boy_dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px rgb(150, 150, 150);
+}
+/*contenedor de las opciones para eescoger la boy*/
+.contenedor_boy {
+  background-color: rgb(0, 0, 0, 0);
+  width: 0px;
+}
+/*btn de las opciones para elgir las opciones de cambio de la boy*/
+.btn_opc_boy {
+  width: 100px;
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  outline: none;
+  width: 80px;
+}
+/*input de las opciones para cambiar la boy*/
+.input_boy {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(33, 33, 120);
+  border: 0px;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  width: 80px;
+}
+.input_boy_escribir {
+  width: 100%;
+  outline: none;
+  border: 0px;
+}
+.btn_opc_boy_listo {
+  background-color: rgba(75, 75, 75);
+  width: 80px;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.btn_opc_boy_listo:focus {
+  outline: none;
+  background-color: rgba(120, 120, 120);
+}
+/*TERMINA LOS BOTONES DE LAS OPCIONES PARA CAMBIAR DATOS DE LA ESERVA*/
+
+@keyframes background-color {
+  100% {
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+#rect {
+  animation-name: rainbow;
+  animation-duration: 6s;
+  height: 50px;
+  line-height: 50px;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: rgb(255, 0, 0);
+    top: 0px;
+  }
+  50% {
+    background-color: rgb(238, 0, 0);
+    top: 50px;
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+    top: 0px;
+  }
+}
+/*////////////////////////////////////////////////////////*/
+/**/
+/*grid header = las letars lun mar mie...*/
+/*grid body = los numeros del mes 1 2 3...*/
+/*calendar*/
+
+/*aqui estamos dando estilo al contenedor de toda la paguina
+en su totalidad*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*asi se crea variables en css puedes llamar y aplicar esos estilos*/
+
+:root {
+  --color-bg-calendar: rgb(0, 0, 0);
+  --color-cell: #e3e3e3;
+  --color-cell-disabled: #424649;
+}
+.root {
+  align-items: center;
+}
+
+/*estilo del calendario llamando a variables 
+y demas del cuadro que abarca a caelndar, en ai al contenedor*/
+.calendar {
+  padding: 20px 10px;
+  background-color: var(--color-bg-calendar);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 300px;
+  font-family: sans-serif;
+}
+/*letras de oct 2020*/
+.calendar__header {
+  color: white;
+  /*display para aliner los elementos*/
+  display: flex;
+  justify-content: space-between;
+  /*tranforma el mayuscula oct 2020*/
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+/*asi afectamos a un alemto que esta dentro de calendar*/
+.calendar .control {
+  color: white;
+  /*se hace mas grueso las letras, en negrillas*/
+  font-weight: bold;
+  /*color de fondo tranparente al boton*/
+  background-color: transparent;
+  /*sin borde, le decimos que no quermos borde*/
+  border: none;
+  /*cursor: pointer; es para que aparesca la manito
+    al pasar por un boton*/
+  cursor: pointer;
+  /*en padding el primer dato es para Y de arriba tanto abajo
+    el segundo dato es para X izquierda y derecha, (lados)*/
+  padding: 0px 5px;
+}
+
+/*la parte del body
+el grid del head  
+y grid de body*/
+.grid__header,
+.grid__body {
+  /*display para aliner los elementos*/
+  display: grid;
+  /*que las columnas tengan el mismo tamaño,
+    "7 repite en por ser 7 columnas, para que sean iguales 1fr*/
+  grid-template-columns: repeat(7, 1fr);
+}
+/*el grid header*/
+.grid__header {
+  color: white;
+  margin-bottom: 15px;
+}
+/*el grid body*/
+.grid__body {
+  /*altura de las celdas*/
+  grid-auto-rows: 40px;
+  color: var(--color-cell);
+}
+/*con flexbox afectas a todas clases que tengan ese mismo nombre*/
+.grid__cell {
+  display: flex;
+  /*centar en el eje pricipal (referente al cuadrado que contiene al calendar)*/
+  justify-content: center;
+  /*centar en el eje secundario (celdas)*/
+  align-items: center;
+}
+/*a las celdas cunado paso la manito por el grid body*/
+.grid__cell--gd {
+  cursor: pointer;
+}
+/*grid__cell--selected Los que tengan ese clase
+seran los seleccionados*/
+.grid__cell--selected {
+  /*truco para cuando se seleccione*/
+  /*se que da la primera celda celecionada*/
+  color: var(--color-bg-calendar);
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid rgb(0, 0, 0, 0.1);
+  /*(shadow-sombra)primero altura en X luego Y, luego difuminado*/
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+/*celldas desabilitadas*/
+.grid__cell--disabled {
+  color: var(--color-cell-disabled);
+  cursor: not-allowed;
+}
+/*////////////////////////////////////////////////////////*/
+/*la barra de contactos y demas funciones*/
+.rectanguloContactos {
+  background-color: #000020;
+  margin: auto;
+  margin-bottom: 0px;
+}
+/*botones de la barra de contactos  de la parte inferior*/
+.btnContactos {
+  color: rgb(255, 255, 255);
+  line-height: 63px;
+}
+/*iamgenes-iconos del fueter*/
+.img_footer {
+  margin-top: 18px;
+  height: 25px;
+  border-radius: 9px;
+}

@@ -1,0 +1,182 @@
+
+/*clase del logo de la barra del nav*/
+body{
+	background-color: rgba(0, 0, 0, 0.0);
+}
+.logo{
+	height: 50px;
+}
+/*barra de dirrecciones en la parte de arriba*/
+.containerBarraArriba{
+	background-image: url("../img/fondo_Barra_Direcciones.jpg");
+    line-height: 63px;
+    margin-right: auto;
+	margin-bottom: 0px;
+    text-align: center;
+	font-size: 20px;
+}
+/*direcciones de las barras su personalizacion en si :o*/
+.nombresDireccionesBarra{
+	background-color: rgb(0, 0, 0, 0.0);
+	border-top: 0px;
+	border-bottom: 1px;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.nombresDireccionesBarra:focus{
+	outline: none;
+}
+.nombresDireccionesBarra:hover{
+	outline: none;
+}
+/*columnas vacias del nav*/
+.colVacio{
+	border: 1px solid rgb(0, 0, 0);
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+}
+/*icono de la barra*/
+.imgIconoBarra{
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+/*fondo de las columnas*/
+.colFondo{
+	background-color: rgb(33, 33, 56);
+	border: 3px solid rgb(33, 33, 150, 0.3);
+}
+/*posicion del carousel*/
+#carousel{
+	position:relative;
+}
+.input_muestra_reservado{
+	border: none;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.0);
+	color: rgba(255, 255, 255, 0.8);
+}
+.input_muestra_reservado:hover{
+	outline: none;
+}
+.input_muestra_reservado:focus{
+	outline: none;
+}
+.input_muestra_horario{
+	background-color: rgba(0, 0, 0, 0.0);
+	border: none;
+	text-align: center;
+	width: 250px;
+	font-size: 13px;
+	border-radius: 30px;
+	margin-bottom: 10px;
+	color: rgba(255, 255, 255, 0.8);
+}
+.input_muestra_horario:hover{
+	outline: none;
+}
+.input_muestra_horario:focus{
+	outline: none;
+}
+.nombre_restaurante{
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(0, 0, 0, 0.0);
+	border: none;
+	text-align: center;
+	width: 100%;
+}
+.nombre_restaurante:hover{
+	outline: none;
+}
+.nombre_restaurante:focus{
+	outline: none;
+}
+.reservado{
+	background-color: rgb(255, 0, 0);
+	box-shadow: 0 0 9px 1px rgb(255, 0, 0);
+}
+.btnReservar_Lugar{
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 3px solid rgb(2, 2, 252, 0.1);
+	border-radius: 50px;
+	width: 130px;
+}
+.btnReservar_Lugar:hover{
+	background-color: rgb(197, 197, 197);
+	box-shadow: 0 0 9px 1px rgb(255, 255, 255, 0.5);
+	transition: all 0.5s;
+}
+.btnReservar_Lugar:focus{
+	outline: none;
+}
+/*fondo del contenido despues ed la linea negra*/
+.contenido{
+	background-color: rgb(33, 33, 56, 0.2);
+}
+/*titulo de "resreva en los mejores restaurnates"*/
+.titulos{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    text-align: center;
+    margin: auto;
+    margin-top: 11px;
+	margin-bottom: 38px;
+	padding: 20px;
+}
+.card-text{
+	color: rgba(255, 255, 255, 0.8);
+}
+/*contenedor de las targetas de lugares del reserva*/
+.sitiosRestaurantes {
+	position:absolute;
+	top: 0px;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+	color: white;  
+	font-family: "Segoe UI";
+}
+/*barra del final, la de contactos*/
+.barraContactos{
+	background-color:  #000020;
+}
+.letrasContacto{
+	color: white;
+}
+/*imagenes del carousel*/
+.imgCarusel{
+	max-height: 34vh;
+	object-fit: cover;
+}
+/*de cada imagen de las cartas*/
+.imgCards{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	width: 100%;
+}
+/*contenedor tatal de cada carta*/
+.cartaContenedor{
+	height: 520px;
+	margin: auto;
+	margin-bottom: 50px;
+	text-align: center;
+	background-color: rgba(33, 33, 60);
+	box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.cartaContenedor:hover{
+	box-shadow: 0px 3px 10px 1px rgba(0, 0, 0);
+	border: 1px solid rgba(255, 255, 255, 0.6);
+}
+/*iamgenes-iconos del fueter*/
+.img_footer{
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 9px;
+}

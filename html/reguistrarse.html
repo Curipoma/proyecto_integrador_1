@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+         
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">        
+
+        <title>Iniciar sessión</title>
+        <link rel="shortcut icon"type="imagen/x-icon" href="../img/Icono_Barra_Direcciones.png">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="../css/registrarse.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+        <nav class="navegadorBarra">
+            <div class="fila row">
+                <div class="col">  
+                    <img class="imgIconoBarra" style="height: 70px;" src="../img/Icono_Barra_Direcciones.png">
+                </div>
+                <div class="col">
+                    <div class="posicionBotonReguistrarse">
+                        <form action="../index.html">
+                            <button class="botonIndividualReguistrase" onclick="registrarse()">
+                                Registrarse
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--creando una linea de separacion nada mas en modo estetico-->
+        <hr style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <h1 class="tituloMayor">Iniciar sesión</h1>
+                </div>
+            </div>
+        </div>
+        
+        <!--creando una linea de separacion nada mas en modo estetico-->
+        <hr style="background-color: rgba(0, 0, 0, 0.2);">
+        
+        <div style="border-top:2px solid rgba(0, 0, 0, 0.2);">
+                <div class="formulario">
+                    <form >
+                           
+                        <input class="formulario__input" id="nombreUsuario" name="nombreUsuario" type="text" required="">
+                        <label class="formulario__label" for="nombreUsuario">Usuario</label>
+
+                        <input class="formulario__input" id="password" name="password" type="password" minlength="4" required="">
+                        <label class="formulario__label" >Contraseña</label>                       
+
+                        <div class="position_btn">
+                            <button type="reset" onclick="datosLogin(nombreUsuario.value, password.value)" class="botonesIngresar">Ingresar</button>
+                        </div>
+
+
+                    </form>
+
+                    <div class="position_btn">
+                        <form action="../index.html">
+                            <button class="botonesIngresar">
+                                Volver
+                            </button>
+                        </form>
+                    </div>
+                    
+                </div>
+        </div>
+
+
+        <!--comienza la barra de contactos y demas-->  
+            <div class="rectanguloContactos row text-left">
+                <div class="col-12 col-md-6 col-lg">
+                  <a class="btnContactos" href="#">Contactos</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg">
+                  <a class="btnContactos" href="#">Direccion</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg">
+                  <a class="btnContactos" href="#">Informacion</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg">
+                  <a class="btnContactos" href="#">Referencias_legales</a>
+                </div>
+                <div class="col col-md-6 col-lg" style="text-align: right;">
+                    <a href="#"><img class="img_footer" src="../img/iconos-redes-facebook.jpg"></a>
+                </div>
+                <div class="col col-md-6 col-lg" style="text-align: right;">
+                    <a href="#"><img class="img_footer" src="../img/iconos-redes-youtube.jpg"></a>
+                </div>
+                <div class="col col-md-6 col-lg" style="text-align: right;">
+                    <a href="#"><img class="img_footer" src="../img/iconos-redes-twiter.jpg"></a>
+                </div>
+                <div class="col col-md-6 col-lg" style="text-align: right;">
+                    <a href="#"><img class="img_footer" src="../img/iconos-redes-instagram.jpg"></a>
+                </div>
+                <div class="col col-md-6 col-lg" style="text-align: right;">
+                    <a href="#"><img class="img_footer" src="../img/iconos-redes-whattsap.jpg"></a>
+                </div>
+                <div class="col col-md-6 col-lg" style="text-align: right;">
+                    <a href="#"><img class="img_footer" src="../img/iconos-redes-pinteresk.jpg"></a>
+                </div>
+                <div class="col col-md-6 col-lg" style="text-align: right;">
+                    <a href="#"><img class="img_footer" src="../img/iconos-redes-google.jpg"></a>
+                </div>
+              </div>
+          <!--termina la barra de contactos y demas-->
+                
+   
+        
+          <script src="../js/login.js"></script>
+
+
+
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
+
